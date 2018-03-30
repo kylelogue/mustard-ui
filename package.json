@@ -7,7 +7,7 @@
     "dev": "gulp",
     "build": "gulp sass"
   },
-  "author": "Kyle Logue <kyle@mustard-ui.com>",
+  "author": "Kyle Logue <hello@kylelogue.com>",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
