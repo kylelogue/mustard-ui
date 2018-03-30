@@ -1,0 +1,32 @@
+/*
+|--------------------------------------------------------------------------
+| Alignment
+|--------------------------------------------------------------------------
+|
+|
+|
+*/
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear-fix {
+    @include clearfix();
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}

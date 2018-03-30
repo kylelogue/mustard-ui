@@ -1,0 +1,52 @@
+/*
+|--------------------------------------------------------------------------
+| Sidebar
+|--------------------------------------------------------------------------
+|
+|
+|
+*/
+
+// Variables
+// ------------------------------------------------------------------------
+
+
+// Styles
+// ------------------------------------------------------------------------
+.sidebar {
+    padding: 15px;
+    // border-left: 1px solid $color-gray-200;
+    border-right: 1px solid $color-gray-300;
+
+    .sidebar-category {
+        padding: 10px;
+        font-size: 16px;
+        color: $color-gray-600;
+        border-bottom: 1px solid $color-gray-300;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path d="M9.4 3.6l5.1 6.9L19.5 3.6" fill="' + $color-gray-400 + '"/></svg>') center right no-repeat;
+
+        &:hover {
+            cursor: pointer;
+            color: $color-light-green-500;
+        }
+
+    }
+
+    .sidebar-links {
+        list-style: none;
+        padding-left: 10px;
+
+        li {
+        }
+
+        a {
+            display: block;
+            padding: 5px 10px;
+            font-size: 14px;
+
+            &.active {
+                font-weight: 700;
+            }
+        }
+    }
+}

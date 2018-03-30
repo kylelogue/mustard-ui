@@ -1,0 +1,94 @@
+/*
+|--------------------------------------------------------------------------
+| Hero
+|--------------------------------------------------------------------------
+|
+|
+|
+*/
+
+// Variables
+// ------------------------------------------------------------------------
+
+
+// Styles
+// ------------------------------------------------------------------------
+header,
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    background: $color-amber-400;
+
+    .title {
+        font-family: 'Averia Libre', sans-serif;
+        font-size: 60px;
+        line-height: 60px;
+        color: $color-gray-800;
+    }
+
+    .subtitle {
+        font-size: 24px;
+        font-weight: 300;
+        color: $color-gray-800;
+    }
+
+    .disclaimer {
+        font-size: 14px;
+        color: $color-gray-800;
+    }
+
+    .scroll-down {
+        opacity: 1;
+        -webkit-transition: all .5s ease-in 3s;
+        transition: all .5s ease-in 3s;
+    }
+
+    .scroll-down {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 45px;
+        left: 50%;
+        margin-left: -16px;
+        width: 32px;
+        height: 32px;
+        border: 2px solid $color-gray-800;
+        border-radius: 50%;
+        animation: bounce 2s infinite 2s;
+        transition: all .2s ease-in;
+
+        &::before {
+            display: block;
+            position: relative;
+            bottom: 2px;
+            content: '';
+            transform: rotate(-45deg);
+            width: 12px;
+            height: 12px;
+            border: 2px solid $color-gray-800;
+            border-width: 0px 0 2px 2px;
+        }
+    }
+
+    @keyframes bounce {
+        0%,
+        100%,
+        20%,
+        50%,
+        80% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-10px);
+        }
+        60% {
+            transform: translateY(-5px);
+        }
+    }
+
+}

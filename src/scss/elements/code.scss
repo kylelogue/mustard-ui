@@ -1,0 +1,38 @@
+/*
+|--------------------------------------------------------------------------
+| Code
+|--------------------------------------------------------------------------
+|
+|
+|
+*/
+
+
+// Variables
+// ------------------------------------------------------------------------
+$code-border-color: $brand-color;
+$code-bg-color: $color-gray-100;
+
+
+// Styles
+// ------------------------------------------------------------------------
+pre {
+    display: block;
+    margin: 15px 0;
+    padding: 10px 15px;
+    border-left: 4px solid $code-border-color;
+    background: $code-bg-color;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 15px;
+    color: $color-gray-900;
+    white-space: normal;
+    overflow-x: auto;
+    box-shadow: 0 2px 4px $color-gray-300;
+}
+
+code {
+    background: $code-bg-color;
+    color: $color-gray-900;
+    font-family: Monaco, 'Courier New', Courier, monospace;
+    white-space: pre;
+}

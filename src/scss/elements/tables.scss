@@ -1,0 +1,47 @@
+/*
+|--------------------------------------------------------------------------
+| Tables
+|--------------------------------------------------------------------------
+|
+|
+|
+*/
+
+// Variables
+// ------------------------------------------------------------------------
+
+
+// Styles
+// ------------------------------------------------------------------------
+
+table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    thead {
+        tr {
+            border-bottom: 1px solid $light-blue;
+        }
+
+        th {
+            padding: 15px;
+            font-size: 12px;
+            text-transform: uppercase;
+            text-align: left;
+            color: $medium-blue;
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid $light-gray;
+        }
+
+        td {
+            padding: 13px;
+        }
+    }
+}

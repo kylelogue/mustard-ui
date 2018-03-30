@@ -1,0 +1,140 @@
+/*
+|--------------------------------------------------------------------------
+| Forms
+|--------------------------------------------------------------------------
+|
+|
+|
+*/
+
+// Variables
+// ------------------------------------------------------------------------
+$input-active-color: $brand-color;
+
+// Styles
+// ------------------------------------------------------------------------
+
+.form-control {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-control-group {
+    display: flex;
+    justify-content: flex-start;
+
+    .form-control {
+        flex: 1;
+        padding-right: 15px;
+
+        &:last-of-type {
+            padding-right: 0;
+        }
+
+        &.grow-1x {
+            flex-grow: 1;
+        }
+
+        &.grow-2x {
+            flex-grow: 2;
+        }
+
+        &.grow-3x {
+            flex-grow: 3;
+        }
+    }
+}
+
+.validation-error {
+    margin-top: 2px;
+    font-size: 12px;
+    color: $color-red-500;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+form {
+    input[type="text"],
+    input[type="password"],
+    select,
+    textarea {
+        width: 100%;
+    }
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    appearance: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: inherit;
+    background: $color-white;
+    border-radius: 5px;
+    border: 1px solid $color-gray-400;
+
+    &::placeholder {
+        color: $color-gray-400;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $input-active-color;
+    }
+
+    &.invalid {
+        border-color: $color-red-200;
+    }
+
+}
+
+select {
+    background: $color-white url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="' + $color-gray-400 + '" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+    padding-right: 30px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+    }
+
+    &:focus {
+        background: $color-white url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="' + $input-active-color + '" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+    }
+}
+
+textarea {
+    appearance: none;
+    display: block;
+    margin-bottom: 10px;
+    padding: 20px 10px 5px;
+    min-height: 100px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: $color-black;
+    background-color: $color-white;
+    border: 1px solid $color-gray-500;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 rgba($color-gray-500, .5);
+
+    &::placeholder {
+        color: $color-gray-500;
+    }
+
+    &:focus {
+        border-color: $input-active-color;
+        outline: none;
+    }
+
+    &.invalid {
+        border-color: $color-red-200;
+    }
+}

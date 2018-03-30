@@ -1,0 +1,38 @@
+/*
+|--------------------------------------------------------------------------
+| Panels
+|--------------------------------------------------------------------------
+|
+|
+|
+*/
+
+// Variables
+// ------------------------------------------------------------------------
+
+
+// Styles
+// ------------------------------------------------------------------------
+.card {
+    margin-bottom: 30px;
+    padding: 15px;
+    background: $color-white;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba($color-gray-500, 0.5);
+
+    .card-title {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .card-actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        & > * {
+            margin-bottom: 0;
+        }
+    }
+}

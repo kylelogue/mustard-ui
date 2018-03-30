@@ -1,0 +1,35 @@
+/*
+|--------------------------------------------------------------------------
+| Sections
+|--------------------------------------------------------------------------
+|
+|
+|
+*/
+
+
+// Variables
+// ------------------------------------------------------------------------
+$section-primary-bg-color: $color-amber-400;
+$section-secondary-bg-color: $color-gray-200;
+$section-tertiary-bg-color: $color-white;
+
+
+// Styles
+// ------------------------------------------------------------------------
+.section,
+section {
+    padding: 90px 30px;
+
+    &.section-primary {
+        background: $section-primary-bg-color;
+    }
+
+    &.section-secondary {
+        background: $section-secondary-bg-color;
+    }
+
+    &.section-tertiary {
+        background: $section-tertiary-bg-color;
+    }
+}

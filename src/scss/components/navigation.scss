@@ -1,0 +1,68 @@
+/*
+|--------------------------------------------------------------------------
+| Navigation
+|--------------------------------------------------------------------------
+|
+|
+|
+*/
+
+// Variables
+// ------------------------------------------------------------------------
+$nav-bg-color: $color-white;
+$nav-link-active-color: $brand-color;
+
+// Styles
+// ------------------------------------------------------------------------
+nav,
+.nav {
+    height: 60px;
+    width: 100%;
+    background: $color-amber-400;
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    a {
+        display: block;
+        color: $color-gray-800;
+    }
+
+    .nav-logo {
+        display: flex;
+        align-items: center;
+        font-family: 'Averia Libre', sans-serif;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        margin: 0;
+
+        a {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0 30px;
+            font-size: 14px;
+            font-weight: 600;
+
+            &:active {
+                color: $nav-link-active-color;
+            }
+
+            &.active {
+                border-bottom: 4px solid $nav-link-active-color;
+            }
+
+        }
+    }
+}

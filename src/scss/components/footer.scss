@@ -1,0 +1,58 @@
+/*
+|--------------------------------------------------------------------------
+| Footer
+|--------------------------------------------------------------------------
+|
+|
+|
+*/
+
+// Variables
+// ------------------------------------------------------------------------
+
+
+// Styles
+// ------------------------------------------------------------------------
+.footer,
+footer {
+    padding: 30px;
+    width: 100%;
+    background: $color-gray-600;
+
+    .footer-text {
+        margin-right: 15px;
+
+        p {
+            color: $color-white;
+        }
+    }
+
+    .footer-links-category {
+        color: $color-white;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .footer-links {
+        margin-bottom: 30px;
+        list-style: none;
+
+        li {
+            margin-top: 5px;
+        }
+
+        a {
+            color: $color-gray-400;
+        }
+    }
+
+    .copyright {
+        margin: 0;
+        padding-top: 30px;
+        font-size: 14px;
+        color: $color-white;
+        border-top: 1px solid $color-gray-500;
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "mustard-ui",
+  "version": "0.0.1",
+  "description": "A modern approach to CSS components.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp sass"
+  },
+  "author": "Kyle Logue <kyle@mustard-ui.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.2.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}
