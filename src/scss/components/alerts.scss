@@ -1,2 +1,24 @@
 // ALERTS
 // ==============================
+
+.alert {
+    margin: 15px 0 30px;
+    padding: 15px;
+    border-radius: 5px;
+
+    &.alert-success {
+        background: $color-green-50;
+    }
+
+    &.alert-info {
+        background: $color-blue-50;
+    }
+
+    &.alert-warning {
+        background: $color-amber-50;
+    }
+
+    &.alert-danger {
+        background: $color-red-50;
+    }
+}

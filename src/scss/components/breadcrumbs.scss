@@ -1,2 +1,24 @@
 // BREADCRUMBS
 // ==============================
+
+.breadcrumbs {
+    list-style: none;
+    font-size: 14px;
+
+    li {
+        display: inline-block;
+
+        &::after {
+            display: inline-block;
+            content: '/';
+            padding: 0 2px;
+            color: $color-gray-500;
+        }
+
+        &:last-of-type {
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

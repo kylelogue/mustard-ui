@@ -2,33 +2,27 @@
 // ==============================
 
 table {
-    margin: 0;
-    padding: 0;
     width: 100%;
     border-spacing: 0;
     border-collapse: collapse;
 
-    thead {
-        tr {
-            border-bottom: 1px solid $light-blue;
-        }
+    tr {
+        border-bottom: 1px solid $color-gray-200;
+        text-align: left;
+    }
 
+    thead {
         th {
             padding: 15px;
-            font-size: 12px;
-            text-transform: uppercase;
-            text-align: left;
-            color: $medium-blue;
+            font-weight: 300;
+            color: $color-gray-500;
         }
     }
 
     tbody {
-        tr {
-            border-bottom: 1px solid $light-gray;
-        }
-
         td {
-            padding: 13px;
+            padding: 15px;
+            font-weight: 300;
         }
     }
 }

@@ -1,8 +1,14 @@
-// BREAKPOINT MIXIN
+// BREAKPOINT MIXINS
 // ==============================
 
 @mixin breakpoint($bp) {
     @media (min-width: $bp) {
+        @content;
+    }
+}
+
+@mixin breakpoint-max($bp) {
+    @media (max-width: $bp) {
         @content;
     }
 }

@@ -1,2 +1,41 @@
 // TOOLTIPS
 // ==============================
+.tooltip {
+    display: inline-block;
+    position: relative;
+    border-bottom: 1px dashed $color-gray-400;
+
+    &:hover {
+        cursor: pointer;
+
+        .tooltip-text {
+            display: block;
+        }
+    }
+
+    .tooltip-text {
+        display: none;
+        position: absolute;
+        bottom: 125%;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 300px;
+        padding: 10px 15px;
+        color: $color-white;
+        text-align: center;
+        background: $color-gray-800;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px $color-gray-500;
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 8px;
+            border-style: solid;
+            border-color: $color-gray-800 transparent transparent;
+        }
+    }
+}

@@ -1,2 +1,43 @@
 // TAGS
 // ==============================
+
+.tags {
+    display: flex;
+    list-style: none;
+
+    .tag {
+        margin-right: 5px;
+        padding: 5px 15px;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 4px;
+        color: $color-white;
+        background: $color-gray-500;
+        box-shadow: 0 2px 4px $color-gray-200;
+
+        a {
+            display: block;
+            color: $color-white;
+        }
+
+        &.tag-rounded {
+            border-radius: 16px;
+        }
+
+        &.tag-blue {
+            background: $color-blue-500;
+        }
+
+        &.tag-red {
+            background: $color-red-500;
+        }
+
+        &.tag-green {
+            background: $color-green-500;
+        }
+
+        &.tag-orange {
+            background: $color-orange-500;
+        }
+    }
+}

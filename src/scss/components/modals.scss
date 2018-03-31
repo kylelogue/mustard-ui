@@ -1,2 +1,48 @@
 // MODALS
 // ==============================
+
+.modal-mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($color-gray-700, 0.5);
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 540px;
+    transform: translate(-50%, -50%);
+    background: $color-white;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba($color-gray-600, 0.5);
+    overflow: hidden;
+
+    .modal-head {
+        padding: 10px 15px;
+
+        .modal-title {
+            font-size: 28px;
+        }
+    }
+
+    .modal-body {
+        flex: 1;
+        padding: 30px 15px;
+        background: $color-gray-200;
+    }
+
+    .modal-footer {
+        padding: 15px;
+
+        & > * {
+            margin-bottom: 0;
+        }
+    }
+}

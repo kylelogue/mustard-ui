@@ -1,17 +1,17 @@
 // NAVIGATION
 // ==============================
-
 $nav-bg-color: $color-white;
 $nav-link-active-color: $brand-color;
-
 nav,
 .nav {
+    padding: 0 15px;
     height: 60px;
     width: 100%;
     background: $color-amber-400;
 
     .nav-container {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         height: 100%;
         max-width: 1200px;
@@ -33,9 +33,13 @@ nav,
     }
 
     .nav-links {
-        display: flex;
+        display: none;
         list-style: none;
         margin: 0;
+
+        @include breakpoint($bp-large) {
+            display: flex;
+        }
 
         a {
             display: flex;
@@ -52,7 +56,33 @@ nav,
             &.active {
                 border-bottom: 4px solid $nav-link-active-color;
             }
+        }
+    }
 
+    .mobile-menu-toggle {
+        display: block;
+        position: relative;
+        height: 20px;
+        width: 26px;
+
+        @include breakpoint($bp-large) {
+            display: none;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 26px;
+            height: 4px;
+            content: '';
+            background: $color-gray-800;
+            border-radius: 4px;
+            box-shadow: 0 8px 0 0 $color-gray-800, 0 16px 0 0 $color-gray-800;
         }
     }
 }

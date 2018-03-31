@@ -1,2 +1,59 @@
 // PRICING TABLES
 // ===============================
+$pricing-featured-color: $brand-color;
+
+
+.pricing-table {
+
+    .package {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 15px;
+        padding: 30px;
+        border: 1px solid $color-gray-300;
+        border-radius: 5px;
+        text-align: center;
+
+        &.featured {
+            border-color: $pricing-featured-color;
+            border-width: 2px;
+
+            .package-name {
+                color: $pricing-featured-color;
+            }
+        }
+
+        hr {
+            border: 0;
+            border-bottom: 1px solid $color-gray-300;
+            height: 1px;
+        }
+
+        .package-name {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .price {
+            margin: 15px 0 0 0;
+            font-size: 36px;
+            line-height: 1.2;
+        }
+
+        .price-disclaimer {
+            font-size: 12px;
+        }
+
+        .features {
+            flex: 1;
+            padding: 15px;
+            list-style: none;
+
+            li {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

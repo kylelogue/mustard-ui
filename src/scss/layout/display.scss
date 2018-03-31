@@ -1,0 +1,62 @@
+// DISPLAY
+// ==============================
+
+.display-none {
+    display: none;
+}
+
+.display-sm-up {
+    display: none;
+
+    @include breakpoint($bp-small) {
+        display: initial;
+    }
+}
+
+.display-md-up {
+    display: none;
+
+    @include breakpoint($bp-medium) {
+        display: initial;
+    }
+}
+
+.display-lg-up {
+    display: none;
+
+    @include breakpoint($bp-large) {
+        display: initial;
+    }
+}
+
+.display-xlg-up {
+    display: none;
+
+    @include breakpoint($bp-xlarge) {
+        display: initial;
+    }
+}
+
+.display-sm-down {
+    @include breakpoint-max($bp-small) {
+        display: none;
+    }
+}
+
+.display-md-down {
+    @include breakpoint-max($bp-medium) {
+        display: none;
+    }
+}
+
+.display-lg-down {
+    @include breakpoint-max($bp-large) {
+        display: none;
+    }
+}
+
+.display-xlg-down {
+    @include breakpoint-max($bp-xlarge) {
+        display: initial;
+    }
+}

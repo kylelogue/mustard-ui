@@ -1,2 +1,44 @@
 // STEPPERS
 // ==============================
+$step-color: $color-light-green-500;
+
+.stepper {
+    margin: 15px;
+
+    .step {
+        position: relative;
+        padding: 0 30px;
+        margin-bottom: 30px;
+        border-left: 1px solid $color-gray-400;
+
+        &:last-of-type {
+            border: none;
+        }
+
+        .step-number {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: -18px;
+            height: 36px;
+            width: 36px;
+            z-index: 1;
+
+            font-weight: 600;
+            color: $color-white;
+            background: $step-color;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px $color-gray-300;
+        }
+
+        .step-title {
+            margin: 0;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 36px;
+        }
+    }
+}

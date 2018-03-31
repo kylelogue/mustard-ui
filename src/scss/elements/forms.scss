@@ -46,15 +46,6 @@ label {
     font-weight: 400;
 }
 
-form {
-    input[type="text"],
-    input[type="password"],
-    select,
-    textarea {
-        width: 100%;
-    }
-}
-
 input[type="text"],
 input[type="password"],
 select {
@@ -84,6 +75,23 @@ select {
 
 }
 
+fieldset {
+    margin: 15px 0;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid $color-gray-400;
+    border-radius: 5px;
+
+    legend {
+        padding: 0 5px;
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+}
+
 select {
     background: $color-white url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="' + $color-gray-400 + '" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
     padding-right: 30px;
@@ -104,16 +112,16 @@ select {
 textarea {
     appearance: none;
     display: block;
-    margin-bottom: 10px;
-    padding: 20px 10px 5px;
+    width: 100%;
+    padding: 10px 15px;
     min-height: 100px;
     font-size: 16px;
+    font-weight: 300;
     line-height: 1.4;
     color: $color-black;
     background-color: $color-white;
-    border: 1px solid $color-gray-500;
-    border-radius: 3px;
-    box-shadow: 0 1px 2px 0 rgba($color-gray-500, .5);
+    border: 1px solid $color-gray-400;
+    border-radius: 5px;
 
     &::placeholder {
         color: $color-gray-500;

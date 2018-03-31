@@ -1,2 +1,29 @@
 // TABS
 // ==============================
+$tab-active-color: $brand-color;
+
+
+.tabs {
+    list-style: none;
+    display: flex;
+    margin: 15px 0 30px;
+
+    .tab {
+        padding: 8px 45px;
+        border-bottom: 1px solid $color-gray-300;
+        color: $color-gray-400;
+
+        &.active {
+            border-top: 2px solid $tab-active-color;
+            border-left: 1px solid $color-gray-300;
+            border-right: 1px solid $color-gray-300;
+            border-bottom: none;
+            color: $color-gray-600;
+        }
+
+        &:hover {
+            opacity: 1;
+            color: $color-gray-800;
+        }
+    }
+}

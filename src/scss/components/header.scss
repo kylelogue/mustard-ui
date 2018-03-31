@@ -8,6 +8,7 @@ header,
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 15px;
     height: 720px;
     background: $color-amber-400;
 
@@ -17,17 +18,21 @@ header,
         font-weight: 400;
         line-height: 60px;
         color: $color-gray-800;
+        text-align: center;
     }
 
     .subtitle {
         font-size: 24px;
         font-weight: 300;
+        line-height: 35px;
         color: $color-gray-800;
+        text-align: center;
     }
 
     .disclaimer {
         font-size: 14px;
         color: $color-gray-800;
+        text-align: center;
     }
 
     .scroll-down {

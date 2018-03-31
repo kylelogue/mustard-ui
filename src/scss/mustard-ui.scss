@@ -5,8 +5,8 @@ https://mustard-ui.com
 */
 
 // Variables
-@import 'vars/colors';
 @import 'vars/breakpoints';
+@import 'vars/colors';
 
 // Mixins
 @import 'mixins/breakpoint';
@@ -18,24 +18,37 @@ https://mustard-ui.com
 @import 'base/base';
 
 // Layout
+@import 'layout/alignment';
+@import 'layout/containers';
+@import 'layout/display';
 @import 'layout/grid';
 @import 'layout/sections';
-@import 'layout/containers';
-@import 'layout/alignment';
 
 // Elements
-@import 'elements/typography';
-@import 'elements/links';
-@import 'elements/buttons';
 @import 'elements/blockquotes';
-@import 'elements/lists';
-@import 'elements/forms';
+@import 'elements/buttons';
 @import 'elements/code';
+@import 'elements/forms';
+@import 'elements/links';
+@import 'elements/lists';
+@import 'elements/tables';
+@import 'elements/typography';
 
 // Components
-@import 'components/navigation';
-@import 'components/panels';
+@import 'components/alerts';
+@import 'components/breadcrumbs';
 @import 'components/cards';
-@import 'components/header';
 @import 'components/footer';
+@import 'components/header';
+@import 'components/menus';
+@import 'components/modals';
+@import 'components/navigation';
+@import 'components/pagination';
+@import 'components/panels';
+@import 'components/pricing-tables';
+@import 'components/progress-bars';
 @import 'components/sidebar';
+@import 'components/steppers';
+@import 'components/tabs';
+@import 'components/tags';
+@import 'components/tooltips';

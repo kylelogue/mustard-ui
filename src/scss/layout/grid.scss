@@ -1,10 +1,12 @@
 // GRID
 // ==============================
 $col-spacing: 10px;
+$row-spacing: 10px;
 
 .row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-right: -$col-spacing/2;
     margin-left: -$col-spacing/2;
     margin-top: 15px;
@@ -18,7 +20,7 @@ $col-spacing: 10px;
         flex-grow: 1;
         flex-basis: 0;
         max-width: 100%;
-        padding: 0 $col-spacing/2;
+        padding: $row-spacing/2 $col-spacing/2;
 
         &.col-reverse {
             flex-direction: column-reverse;
@@ -30,11 +32,11 @@ $col-spacing: 10px;
             flex-basis: ($i / 12) * 100%;
             max-width: ($i / 12) * 100%;
 
-            @for $i from 1 through 12 {
-                &.col-sm-offset-#{$i} {
-                    margin-left: ($i / 12) * 100%;
-                }
-            }
+        }
+    }
+    @for $i from 1 through 12 {
+        .col-sm-offset-#{$i} {
+            margin-left: ($i / 12) * 100%;
         }
     }
 
@@ -44,11 +46,11 @@ $col-spacing: 10px;
                 flex-basis: ($i / 12) * 100%;
                 max-width: ($i / 12) * 100%;
 
-                @for $i from 1 through 12 {
-                    &.col-md-offset-#{$i} {
-                        margin-left: ($i / 12) * 100%;
-                    }
-                }
+            }
+        }
+        @for $i from 1 through 12 {
+            .col-md-offset-#{$i} {
+                margin-left: ($i / 12) * 100%;
             }
         }
     }
@@ -60,11 +62,27 @@ $col-spacing: 10px;
                 max-width: ($i / 12) * 100%;
             }
 
-            @for $i from 1 through 12 {
-                &.col-lg-offset-#{$i} {
-                    margin-left: ($i / 12) * 100%;
-                }
+        }
+        @for $i from 1 through 12 {
+            .col-lg-offset-#{$i} {
+                margin-left: ($i / 12) * 100%;
             }
         }
     }
+
+    @include breakpoint($bp-large) {
+        @for $i from 1 through 12 {
+            .col-xlg-#{$i} {
+                flex-basis: ($i / 12) * 100%;
+                max-width: ($i / 12) * 100%;
+            }
+
+        }
+        @for $i from 1 through 12 {
+            .col-xlg-offset-#{$i} {
+                margin-left: ($i / 12) * 100%;
+            }
+        }
+    }
+
 }

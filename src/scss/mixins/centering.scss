@@ -1,4 +1,4 @@
-// CENTERING MIXIN
+// CENTERING MIXINS
 // ==============================
 
 @mixin center-x {
@@ -7,10 +7,18 @@
     transform: translateX(-50%);
 }
 
+.center-x {
+    @include center-x()
+}
+
 @mixin center-y {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.center-y {
+    @include center-y()
 }
 
 @mixin center-xy {
@@ -18,4 +26,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.center-xy {
+    @include center-xy()
 }

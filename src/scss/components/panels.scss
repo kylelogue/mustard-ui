@@ -18,21 +18,12 @@
     background: $color-gray-100;
 
     .panel-title {
-        flex: 1 1 auto;
         font-size: 28px;
     }
-
-    .panel-action {
-        display: block;
-        flex-grow: 0;
-        display: block;
-        margin-left: 30px;
-    }
-
 }
 
 .panel-body {
-    padding: 10px 15px;
+    padding: 30px 15px;
 }
 
 .panel-footer {

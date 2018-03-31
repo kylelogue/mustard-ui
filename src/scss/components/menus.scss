@@ -1,2 +1,28 @@
 // MENUS
 // ==============================
+
+.menu {
+    position: absolute;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba($color-gray-500, 0.5);
+
+    li {
+        a {
+            display: block;
+            padding: 10px 30px;
+            border-bottom: 1px solid $color-gray-200;
+
+            &:hover {
+                background: $color-gray-50;
+            }
+
+            i {
+                display: inline-block;
+                margin-right: 10px;
+                min-width: 25px;
+                text-align: center;
+            }
+        }
+    }
+}
