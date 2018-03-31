@@ -1,18 +1,6 @@
-/*
-|--------------------------------------------------------------------------
-| Hero
-|--------------------------------------------------------------------------
-|
-|
-|
-*/
+// HEADER
+// ==============================
 
-// Variables
-// ------------------------------------------------------------------------
-
-
-// Styles
-// ------------------------------------------------------------------------
 header,
 .header {
     position: relative;
@@ -20,12 +8,13 @@ header,
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 750px;
+    height: 720px;
     background: $color-amber-400;
 
     .title {
         font-family: 'Averia Libre', sans-serif;
         font-size: 60px;
+        font-weight: 400;
         line-height: 60px;
         color: $color-gray-800;
     }

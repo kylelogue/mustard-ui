@@ -1,22 +1,16 @@
-/*
-|--------------------------------------------------------------------------
-| Sidebar
-|--------------------------------------------------------------------------
-|
-|
-|
-*/
+// SIDEBAR
+// ==============================
 
-// Variables
-// ------------------------------------------------------------------------
-
-
-// Styles
-// ------------------------------------------------------------------------
 .sidebar {
     padding: 15px;
-    // border-left: 1px solid $color-gray-200;
-    border-right: 1px solid $color-gray-300;
+
+    &.sidebar-left {
+        border-right: 1px solid $color-gray-300;
+    }
+
+    &.sidebar-right {
+        border-left: 1px solid $color-gray-300;
+    }
 
     .sidebar-category {
         padding: 10px;

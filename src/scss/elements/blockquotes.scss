@@ -1,26 +1,15 @@
-/*
-|--------------------------------------------------------------------------
-| Blockquotes
-|--------------------------------------------------------------------------
-|
-|
-|
-*/
+// BLOCKQUOTES
+// ==============================
 
-
-// Variables
-// ------------------------------------------------------------------------
-$blockquote-border-color: $color-gray-500;
+$blockquote-border-color: $brand-color;
 $blockquote-bg-color: $color-white;
 
-
-// Styles
-// ------------------------------------------------------------------------
 blockquote {
     display: block;
-    margin: 15px 0 30px;
+    margin: 15px 15px 30px;
     padding: 15px;
     font-size: 18px;
+    font-weight: 400;
     border-left: 4px solid $blockquote-border-color;
     background: $blockquote-bg-color;
     box-shadow: 0 2px 4px $color-gray-300;

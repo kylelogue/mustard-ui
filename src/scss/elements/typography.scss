@@ -1,15 +1,6 @@
-/*
-|--------------------------------------------------------------------------
-| Typography
-|--------------------------------------------------------------------------
-|
-| Contains all the styles relvant to heading and body text.
-|
-*/
+// TYPOGRAPHY
+// ==============================
 
-
-// Variables
-// ------------------------------------------------------------------------
 $heading-font-family: 'Open Sans', sans-serif;
 $heading-font-color: $color-gray-800;
 
@@ -17,11 +8,7 @@ $font-family: 'Open Sans', sans-serif;
 $font-size-base: 16px;
 $font-color: $color-gray-800;
 $font-weight: 300;
-$line-height: 1.5;
-
-
-// Styles
-// ------------------------------------------------------------------------
+$line-height: 1.6;
 
 body {
   font-family: $font-family;
@@ -41,35 +28,52 @@ h6 {
   font-weight: $font-weight;
   color: $heading-font-color;
   margin: 0 0 10px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
+.h1,
 h1 {
   font-size: $font-size-base * 3;
+  line-height: $font-size-base * 3.75;
 }
 
+.h2,
 h2 {
   font-size: $font-size-base * 2.5;
+  line-height: $font-size-base * 3.25;
 }
 
+.h3,
 h3 {
   font-size: $font-size-base * 2;
+  line-height: $font-size-base * 2.75;
 }
 
+.h4,
 h4 {
   font-size: $font-size-base * 1.75;
+  line-height: $font-size-base * 2.5;
 }
 
+.h5,
 h5 {
   font-size: $font-size-base * 1.5;
+  line-height: $font-size-base * 2.25;
 }
 
+.h6,
 h6 {
   font-size: $font-size-base * 1.25;
+  line-height: $font-size-base * 2;
 }
 
 p {
   margin-bottom: 15px;
+
+  &.magnify {
+    font-size: $font-size-base * 1.1;
+    line-height: 1.8;
+  }
 }
 
 strong,

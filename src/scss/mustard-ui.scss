@@ -14,8 +14,10 @@ https://mustard-ui.com
 @import 'mixins/clearfix';
 @import 'mixins/triangle';
 
+// Base
+@import 'base/base';
+
 // Layout
-@import 'layout/base';
 @import 'layout/grid';
 @import 'layout/sections';
 @import 'layout/containers';
