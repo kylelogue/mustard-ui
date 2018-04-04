@@ -1,7 +1,11 @@
 // TABS
 // ==============================
-$tab-active-color: $brand-color;
 
+$tab-active-color: $brand-color;
+$tab-border-color: $color-gray-300;
+$tab-hover-text-color: $color-gray-800;
+$tab-active-text-color: $color-gray-600;
+$tab-inactive-text-color: $color-gray-400;
 
 .tabs {
     list-style: none;
@@ -10,20 +14,20 @@ $tab-active-color: $brand-color;
 
     .tab {
         padding: 8px 45px;
-        border-bottom: 1px solid $color-gray-300;
-        color: $color-gray-400;
+        border-bottom: 1px solid $tab-border-color;
+        color: $tab-inactive-text-color;
 
         &.active {
             border-top: 2px solid $tab-active-color;
-            border-left: 1px solid $color-gray-300;
-            border-right: 1px solid $color-gray-300;
+            border-left: 1px solid $tab-border-color;
+            border-right: 1px solid $tab-border-color;
             border-bottom: none;
-            color: $color-gray-600;
+            color: $tab-active-text-color;
         }
 
         &:hover {
             opacity: 1;
-            color: $color-gray-800;
+            color: $tab-hover-text-color;
         }
     }
 }

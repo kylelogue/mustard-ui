@@ -10,11 +10,11 @@ gulp.task('serve', function() {
         server: './'
     });
     gulp.watch('src/scss/**/*.scss', ['sass']);
-    gulp.watch('docs/**/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {
     return gulp.src('src/scss/mustard-ui.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass({
         outputStyle: 'compressed'
     }).on('error', sass.logError))
@@ -25,7 +25,7 @@ gulp.task('sass', function() {
     .pipe(rename({
         suffix:'.min'
     }))
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/css/'))
     .pipe(browserSync.stream());
 });

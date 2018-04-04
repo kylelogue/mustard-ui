@@ -1,9 +1,13 @@
 // TOOLTIPS
 // ==============================
+
+$tooltip-bg-color: $color-gray-800;
+$tooltip-underline-color: $color-gray-400;
+
 .tooltip {
     display: inline-block;
     position: relative;
-    border-bottom: 1px dashed $color-gray-400;
+    border-bottom: 1px dashed $tooltip-underline-color;
 
     &:hover {
         cursor: pointer;
@@ -23,7 +27,7 @@
         padding: 10px 15px;
         color: $color-white;
         text-align: center;
-        background: $color-gray-800;
+        background: $tooltip-bg-color;
         border-radius: 5px;
         box-shadow: 0 2px 4px $color-gray-500;
 
@@ -35,7 +39,7 @@
             transform: translateX(-50%);
             border-width: 8px;
             border-style: solid;
-            border-color: $color-gray-800 transparent transparent;
+            border-color: $tooltip-bg-color transparent transparent;
         }
     }
 }

@@ -1,22 +1,30 @@
 // CARDS
 // ==============================
 
+$card-shadow: true;
+$card-title-font-size: 28px;
+$card-bg-color: $color-white;
+
 .card {
     margin-bottom: 30px;
     padding: 15px;
-    background: $color-white;
+    background: $card-bg-color;
     overflow: hidden;
     border-radius: 5px;
-    box-shadow: 0 4px 12px rgba($color-gray-500, 0.5);
+
+    @if $card-shadow {
+        box-shadow: 0 4px 12px rgba($color-gray-500, 0.5);
+    }
 
     .card-title {
-        font-size: 28px;
+        font-size: $card-title-font-size;
         margin-bottom: 5px;
     }
 
     .card-actions {
         display: flex;
         align-items: center;
+        margin-top: 10px;
         list-style: none;
         justify-content: space-around;
 

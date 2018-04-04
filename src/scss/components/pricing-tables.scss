@@ -1,7 +1,10 @@
 // PRICING TABLES
 // ===============================
-$pricing-featured-color: $brand-color;
 
+$package-bg-color: $color-white;
+$package-featured-color: $brand-color;
+$package-border-color: $color-gray-300;
+$package-separator-color: $color-gray-300;
 
 .pricing-table {
 
@@ -12,22 +15,23 @@ $pricing-featured-color: $brand-color;
         flex-wrap: wrap;
         margin: 15px;
         padding: 30px;
-        border: 1px solid $color-gray-300;
+        border: 1px solid $package-border-color;
         border-radius: 5px;
         text-align: center;
+        background: $package-bg-color;
 
         &.featured {
-            border-color: $pricing-featured-color;
+            border-color: $package-featured-color;
             border-width: 2px;
 
             .package-name {
-                color: $pricing-featured-color;
+                color: $package-featured-color;
             }
         }
 
         hr {
             border: 0;
-            border-bottom: 1px solid $color-gray-300;
+            border-bottom: 1px solid $package-separator-color;
             height: 1px;
         }
 

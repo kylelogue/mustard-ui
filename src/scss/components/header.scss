@@ -1,6 +1,13 @@
 // HEADER
 // ==============================
 
+$header-height: 720px;
+$header-title-size: 50px;
+$header-subtitle-size: 18px;
+$header-disclaimer-size: 12px;
+$header-bg-color: $color-amber-400;
+$header-text-color: $color-gray-800;
+
 header,
 .header {
     position: relative;
@@ -9,29 +16,37 @@ header,
     justify-content: center;
     align-items: center;
     padding: 0 15px;
-    height: 720px;
-    background: $color-amber-400;
+    height: $header-height;
+    background: $header-bg-color;
 
     .title {
-        font-family: 'Averia Libre', sans-serif;
-        font-size: 60px;
+        font-size: $header-title-size;
+        line-height: $header-title-size;
         font-weight: 400;
-        line-height: 60px;
-        color: $color-gray-800;
+        color: $header-text-color;
         text-align: center;
+
+        @include breakpoint($bp-medium) {
+            font-size: $header-title-size * 1.2;
+        }
     }
 
     .subtitle {
-        font-size: 24px;
+        font-size: $header-subtitle-size;
+        line-height: 26px;
         font-weight: 300;
-        line-height: 35px;
-        color: $color-gray-800;
+        color: $header-text-color;
         text-align: center;
+
+        @include breakpoint($bp-medium) {
+            font-size: $header-subtitle-size * 1.33;
+            line-height: 36px;
+        }
     }
 
     .disclaimer {
-        font-size: 14px;
-        color: $color-gray-800;
+        font-size: 12px;
+        color: $header-text-color;
         text-align: center;
     }
 
@@ -51,7 +66,7 @@ header,
         margin-left: -16px;
         width: 32px;
         height: 32px;
-        border: 2px solid $color-gray-800;
+        border: 2px solid $header-text-color;
         border-radius: 50%;
         animation: bounce 2s infinite 2s;
         transition: all .2s ease-in;
@@ -64,7 +79,7 @@ header,
             transform: rotate(-45deg);
             width: 12px;
             height: 12px;
-            border: 2px solid $color-gray-800;
+            border: 2px solid $header-text-color;
             border-width: 0px 0 2px 2px;
         }
     }

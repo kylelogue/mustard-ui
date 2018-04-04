@@ -1,13 +1,17 @@
 // TABLES
 // ==============================
 
+$table-border-color: $color-gray-200;
+$table-header-text-color: $color-gray-500;
+
 table {
+    margin: 15px 0;
     width: 100%;
     border-spacing: 0;
     border-collapse: collapse;
 
     tr {
-        border-bottom: 1px solid $color-gray-200;
+        border-bottom: 1px solid $table-border-color;
         text-align: left;
     }
 
@@ -15,7 +19,7 @@ table {
         th {
             padding: 15px;
             font-weight: 300;
-            color: $color-gray-500;
+            color: $table-header-text-color;
         }
     }
 

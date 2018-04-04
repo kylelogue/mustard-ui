@@ -1,17 +1,21 @@
 // CONTAINERS
 // ==============================
 
+$container-sizes: (
+    'small'    : 768px,
+    'large'    : 1440px,
+);
+
 .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 30px 0;
-}
 
-.container-small {
-    max-width: 768px;
-}
+    @each $name, $size in $container-sizes {
+        &.container-#{$name} {
+            max-width: $size;
+        }
+    }
 
-.container-large {
-    max-width: 1440px;
 }

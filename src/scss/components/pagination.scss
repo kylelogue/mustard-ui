@@ -1,7 +1,9 @@
 // PAGINATION
 // ==============================
 
+$pagination-bg-color: $color-white;
 $pagination-active-color: $brand-color;
+$pagination-border-color: $color-gray-300;
 
 .pagination {
     display: flex;
@@ -15,13 +17,18 @@ $pagination-active-color: $brand-color;
             display: block;
             padding: 5px 10px;
             border-radius: 5px;
-            background: $color-white;
-            border: 1px solid $color-gray-300;
+            background: $pagination-bg-color;
+            border: 1px solid $pagination-border-color;
 
             &.active,
             &:hover {
                 opacity: 1;
                 border-color: $pagination-active-color;
+            }
+
+            &.active {
+                background: $pagination-active-color;
+                color: $color-white;
             }
 
             &:active {

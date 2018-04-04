@@ -1,20 +1,24 @@
 // FOOTER
 // ==============================
 
+$footer-text-color: $color-white;
+$footer-bg-color: $color-gray-600;
+$footer-links-color: $color-gray-400;
+
 .footer,
 footer {
     padding: 30px;
     width: 100%;
-    background: $color-gray-600;
+    background: $footer-bg-color;
 
     .footer-text {
         p {
-            color: $color-white;
+            color: $footer-text-color;
         }
     }
 
     .footer-links-category {
-        color: $color-white;
+        color: $footer-text-color;
         font-size: 14px;
         font-weight: 600;
         text-transform: uppercase;
@@ -29,7 +33,7 @@ footer {
         }
 
         a {
-            color: $color-gray-400;
+            color: $footer-links-color;
         }
     }
 
@@ -37,7 +41,11 @@ footer {
         margin: 0;
         padding-top: 30px;
         font-size: 14px;
-        color: $color-white;
+        color: $footer-text-color;
         border-top: 1px solid $color-gray-500;
+
+        a {
+            color: $footer-links-color;
+        }
     }
 }

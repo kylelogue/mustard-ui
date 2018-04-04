@@ -1,11 +1,19 @@
 // MENUS
 // ==============================
 
+$menu-shadow: true;
+$menu-bg-color: $color-white;
+$menu-hover-color: $color-gray-50;
+
 .menu {
-    position: absolute;
+    display: inline-block;
     list-style: none;
+    background: $menu-bg-color;
     border-radius: 5px;
-    box-shadow: 0 4px 12px rgba($color-gray-500, 0.5);
+
+    @if $menu-shadow {
+        box-shadow: 0 4px 12px rgba($color-gray-500, 0.5);
+    }
 
     li {
         a {
@@ -14,14 +22,7 @@
             border-bottom: 1px solid $color-gray-200;
 
             &:hover {
-                background: $color-gray-50;
-            }
-
-            i {
-                display: inline-block;
-                margin-right: 10px;
-                min-width: 25px;
-                text-align: center;
+                background: $menu-hover-color;
             }
         }
     }

@@ -1,5 +1,7 @@
 // GRID
 // ==============================
+
+$col-count: 12;
 $col-spacing: 10px;
 $row-spacing: 10px;
 
@@ -7,8 +9,6 @@ $row-spacing: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-right: -$col-spacing/2;
-    margin-left: -$col-spacing/2;
     margin-top: 15px;
     margin-bottom: 15px;
 
@@ -27,60 +27,60 @@ $row-spacing: 10px;
         }
     }
 
-    @for $i from 1 through 12 {
+    @for $i from 1 through $col-count {
         .col-sm-#{$i} {
-            flex-basis: ($i / 12) * 100%;
-            max-width: ($i / 12) * 100%;
+            flex-basis: ($i / $col-count) * 100%;
+            max-width: ($i / $col-count) * 100%;
 
         }
     }
-    @for $i from 1 through 12 {
+    @for $i from 1 through $col-count {
         .col-sm-offset-#{$i} {
-            margin-left: ($i / 12) * 100%;
+            margin-left: ($i / $col-count) * 100%;
         }
     }
 
     @include breakpoint($bp-small) {
-        @for $i from 1 through 12 {
+        @for $i from 1 through $col-count {
             .col-md-#{$i} {
-                flex-basis: ($i / 12) * 100%;
-                max-width: ($i / 12) * 100%;
+                flex-basis: ($i / $col-count) * 100%;
+                max-width: ($i / $col-count) * 100%;
 
             }
         }
-        @for $i from 1 through 12 {
+        @for $i from 1 through $col-count {
             .col-md-offset-#{$i} {
-                margin-left: ($i / 12) * 100%;
+                margin-left: ($i / $col-count) * 100%;
             }
         }
     }
 
     @include breakpoint($bp-medium) {
-        @for $i from 1 through 12 {
+        @for $i from 1 through $col-count {
             .col-lg-#{$i} {
-                flex-basis: ($i / 12) * 100%;
-                max-width: ($i / 12) * 100%;
+                flex-basis: ($i / $col-count) * 100%;
+                max-width: ($i / $col-count) * 100%;
             }
 
         }
-        @for $i from 1 through 12 {
+        @for $i from 1 through $col-count {
             .col-lg-offset-#{$i} {
-                margin-left: ($i / 12) * 100%;
+                margin-left: ($i / $col-count) * 100%;
             }
         }
     }
 
     @include breakpoint($bp-large) {
-        @for $i from 1 through 12 {
+        @for $i from 1 through $col-count {
             .col-xlg-#{$i} {
-                flex-basis: ($i / 12) * 100%;
-                max-width: ($i / 12) * 100%;
+                flex-basis: ($i / $col-count) * 100%;
+                max-width: ($i / $col-count) * 100%;
             }
 
         }
-        @for $i from 1 through 12 {
+        @for $i from 1 through $col-count {
             .col-xlg-offset-#{$i} {
-                margin-left: ($i / 12) * 100%;
+                margin-left: ($i / $col-count) * 100%;
             }
         }
     }

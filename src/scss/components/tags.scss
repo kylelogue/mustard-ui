@@ -1,8 +1,18 @@
 // TAGS
 // ==============================
 
+$tag-text-color: $color-white;
+$tag-default-color: $color-gray-500;
+$tag-colors: (
+    'blue'    : $color-blue-500,
+    'red'     : $color-red-500,
+    'green'   : $color-green-500,
+    'orange'  : $color-orange-500,
+);
+
 .tags {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
 
     .tag {
@@ -11,8 +21,8 @@
         font-size: 14px;
         font-weight: 400;
         border-radius: 4px;
-        color: $color-white;
-        background: $color-gray-500;
+        color: $tag-text-color;
+        background: $tag-default-color;
         box-shadow: 0 2px 4px $color-gray-200;
 
         a {
@@ -24,20 +34,10 @@
             border-radius: 16px;
         }
 
-        &.tag-blue {
-            background: $color-blue-500;
-        }
-
-        &.tag-red {
-            background: $color-red-500;
-        }
-
-        &.tag-green {
-            background: $color-green-500;
-        }
-
-        &.tag-orange {
-            background: $color-orange-500;
+        @each $name, $color in $tag-colors {
+            &.tag-#{$name} {
+                background: $color;
+            }
         }
     }
 }

@@ -1,9 +1,11 @@
 // STEPPERS
 // ==============================
-$step-color: $color-light-green-500;
+
+$step-text-color: $color-white;
+$step-bg-color: $color-light-green-500;
 
 .stepper {
-    margin: 15px;
+    margin: 30px 15px;
 
     .step {
         position: relative;
@@ -28,8 +30,8 @@ $step-color: $color-light-green-500;
             z-index: 1;
 
             font-weight: 600;
-            color: $color-white;
-            background: $step-color;
+            color: $step-text-color;
+            background: $step-bg-color;
             border-radius: 50%;
             box-shadow: 0 2px 4px $color-gray-300;
         }

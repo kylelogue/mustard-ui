@@ -1,24 +1,22 @@
 // ALERTS
 // ==============================
 
+$alert-colors: (
+    'danger'   : $color-red-50,
+    'info'     : $color-blue-50,
+    'warning'  : $color-amber-50,
+    'success'  : $color-green-50,
+);
+
 .alert {
-    margin: 15px 0 30px;
+    margin: 15px 0;
     padding: 15px;
     border-radius: 5px;
 
-    &.alert-success {
-        background: $color-green-50;
+    @each $name, $color in $alert-colors {
+        &.alert-#{$name} {
+            background: $color;
+        }
     }
 
-    &.alert-info {
-        background: $color-blue-50;
-    }
-
-    &.alert-warning {
-        background: $color-amber-50;
-    }
-
-    &.alert-danger {
-        background: $color-red-50;
-    }
 }

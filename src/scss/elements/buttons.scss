@@ -1,6 +1,7 @@
 // BUTTONS
 // ==============================
 
+$button-shadow: true;
 $button-color: $brand-color;
 
 .button,
@@ -29,7 +30,10 @@ input[type='submit'] {
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    box-shadow: 0 2px 4px rgba($color-gray-600, 0.5);
+
+    @if $button-shadow {
+        box-shadow: 0 2px 4px rgba($color-gray-600, 0.5);
+    }
 
     &:focus {
         outline: none;
@@ -39,7 +43,10 @@ input[type='submit'] {
         opacity: 0.9;
         transform: scale(1.025);
         cursor: pointer;
-        box-shadow: 0 2px 8px rgba($color-gray-800, 0.5);
+
+        @if $button-shadow {
+            box-shadow: 0 2px 8px rgba($color-gray-800, 0.5);
+        }
     }
 
     &:active {

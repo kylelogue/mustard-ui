@@ -1,11 +1,19 @@
 // PROGRESS BARS
 // ==============================
-$progress-bar-color: $color-green-400;
+
+$progress-bar-height: 20px;
+$progress-bar-bg-color: $color-gray-200;
+$progress-bar-colors: (
+    'green'  : $color-green-400,
+    'blue'   : $color-blue-400,
+    'red'    : $color-red-400,
+);
 
 .progress-bar {
     position: relative;
-    height: 20px;
-    background: $color-gray-200;
+    margin: 15px 0;
+    height: $progress-bar-height;
+    background: $progress-bar-bg-color;
     border-radius: 5px;
     overflow: hidden;
 
@@ -14,8 +22,13 @@ $progress-bar-color: $color-green-400;
         position: absolute;
         height: 100%;
         border-radius: 4px;
-        background: $progress-bar-color;
         overflow: hidden;
+
+        @each $name, $color in $progress-bar-colors {
+            &.progress-bar-#{$name} {
+                background: $color;
+            }
+        }
     }
 
     &.striped {

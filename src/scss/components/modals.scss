@@ -1,13 +1,19 @@
 // MODALS
 // ==============================
 
+$modal-shadow: true;
+$modal-bg-color: $color-white;
+$modal-mask-color: $color-gray-700;
+$modal-content-bg-color: $color-gray-200;
+
 .modal-mask {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($color-gray-700, 0.5);
+    background: rgba($modal-mask-color, 0.5);
+    z-index: 10;
 }
 
 .modal {
@@ -19,23 +25,26 @@
     left: 50%;
     max-width: 540px;
     transform: translate(-50%, -50%);
-    background: $color-white;
+    background: $modal-bg-color;
     border-radius: 5px;
-    box-shadow: 0 4px 12px rgba($color-gray-600, 0.5);
     overflow: hidden;
+
+    @if $modal-shadow {
+        box-shadow: 0 4px 12px rgba($color-gray-600, 0.5);
+    }
 
     .modal-head {
         padding: 10px 15px;
 
         .modal-title {
-            font-size: 28px;
+            font-size: 24px;
         }
     }
 
     .modal-body {
         flex: 1;
         padding: 30px 15px;
-        background: $color-gray-200;
+        background: $modal-content-bg-color;
     }
 
     .modal-footer {

@@ -1,8 +1,12 @@
 // FORMS
 // ==============================
 
+$input-bg-color: $color-white;
 $input-active-color: $brand-color;
-
+$input-border-color: $color-gray-400;
+$input-invalid-color: $color-red-200;
+$input-error-text-color: $color-red-500;
+$input-placeholder-color: $color-gray-500;
 
 .form-control {
     position: relative;
@@ -38,7 +42,7 @@ $input-active-color: $brand-color;
 .validation-error {
     margin-top: 2px;
     font-size: 12px;
-    color: $color-red-500;
+    color: $input-error-text-color;
 }
 
 label {
@@ -56,12 +60,12 @@ select {
     line-height: 20px;
     font-size: 16px;
     font-weight: inherit;
-    background: $color-white;
+    background: $input-bg-color;
     border-radius: 5px;
-    border: 1px solid $color-gray-400;
+    border: 1px solid $input-border-color;
 
     &::placeholder {
-        color: $color-gray-400;
+        color: $input-placeholder-color;
     }
 
     &:focus {
@@ -70,7 +74,7 @@ select {
     }
 
     &.invalid {
-        border-color: $color-red-200;
+        border-color: $input-error-text-color;
     }
 
 }
@@ -79,7 +83,7 @@ fieldset {
     margin: 15px 0;
     padding: 15px;
     font-size: 14px;
-    border: 1px solid $color-gray-400;
+    border: 1px solid $input-border-color;
     border-radius: 5px;
 
     legend {
@@ -93,7 +97,7 @@ input[type="radio"] {
 }
 
 select {
-    background: $color-white url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="' + $color-gray-400 + '" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+    background: $input-bg-color url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="' + $input-border-color + '" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
     padding-right: 30px;
 
     &:hover {
@@ -105,7 +109,7 @@ select {
     }
 
     &:focus {
-        background: $color-white url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="' + $input-active-color + '" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+        background: $input-bg-color url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="' + $input-active-color + '" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
     }
 }
 
@@ -119,12 +123,12 @@ textarea {
     font-weight: 300;
     line-height: 1.4;
     color: $color-black;
-    background-color: $color-white;
-    border: 1px solid $color-gray-400;
+    background-color: $input-bg-color;
+    border: 1px solid $input-border-color;
     border-radius: 5px;
 
     &::placeholder {
-        color: $color-gray-500;
+        color: $input-placeholder-color;
     }
 
     &:focus {
@@ -133,6 +137,6 @@ textarea {
     }
 
     &.invalid {
-        border-color: $color-red-200;
+        border-color: $input-invalid-color;
     }
 }

@@ -1,12 +1,20 @@
 // PANELS
 // =============================
 
+$panel-shadow: true;
+$panel-bg-color: $color-white;
+$panel-head-color: $color-gray-100;
+$panel-footer-color: $color-gray-100;
+
 .panel {
-    background: $color-white;
+    background: $panel-bg-color;
     border-radius: 5px;
     overflow: hidden;
     margin: 30px 0;
-    box-shadow: 0 4px 12px rgba($color-gray-500, 0.5);
+
+    @if $panel-shadow {
+        box-shadow: 0 4px 12px rgba($color-gray-500, 0.5);
+    }
 }
 
 .panel-head {
@@ -15,7 +23,7 @@
     justify-content: space-between;
     margin-bottom: 10px;
     padding: 10px 15px;
-    background: $color-gray-100;
+    background: $panel-head-color;
 
     .panel-title {
         font-size: 28px;
@@ -28,7 +36,7 @@
 
 .panel-footer {
     padding: 15px;
-    background: $color-gray-100;
+    background: $panel-footer-color;
 
     & > * {
         margin-bottom: 0;
