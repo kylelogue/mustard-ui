@@ -41,7 +41,7 @@ nav,
         margin: 0;
         height: 100%;
 
-        @include breakpoint($bp-large) {
+        @include breakpoint-min($bp-medium) {
             display: flex;
         }
 
@@ -71,7 +71,7 @@ nav,
         height: 20px;
         width: 26px;
 
-        @include breakpoint($bp-large) {
+        @include breakpoint-min($bp-medium) {
             display: none;
         }
 

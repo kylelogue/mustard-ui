@@ -26,7 +26,7 @@ header,
         color: $header-text-color;
         text-align: center;
 
-        @include breakpoint($bp-medium) {
+        @include breakpoint-min($bp-medium) {
             font-size: $header-title-size * 1.2;
         }
     }
@@ -38,7 +38,7 @@ header,
         color: $header-text-color;
         text-align: center;
 
-        @include breakpoint($bp-medium) {
+        @include breakpoint-min($bp-medium) {
             font-size: $header-subtitle-size * 1.33;
             line-height: 36px;
         }

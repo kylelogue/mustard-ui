@@ -1,21 +1,22 @@
 // DISPLAY
 // ==============================
 
-$display-up: (  // uses min width media query
-    'md'   : $bp-small,
-    'lg'   : $bp-medium,
-    'xlg'  : $bp-large,
+$display-up: (
+'sm'   : $bp-small,
+'md'   : $bp-medium,
+'lg'   : $bp-large,
+'xlg'  : $bp-xlarge
 );
-$display-down: (  // uses max width media query
-    'sm'   : $bp-small,
-    'md'   : $bp-medium,
-    'lg'   : $bp-large,
-    'xlg'  : $bp-xlarge,
+$display-down: (
+'sm'   : $bp-small,
+'md'   : $bp-medium,
+'lg'   : $bp-large,
+'xlg'  : $bp-xlarge,
 );
 
 .display-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .display-none {
@@ -26,7 +27,7 @@ $display-down: (  // uses max width media query
     .display-#{$name}-up {
         display: none;
 
-        @include breakpoint($bp) {
+        @include breakpoint-min($bp) {
             display: initial;
         }
     }
@@ -36,8 +37,22 @@ $display-down: (  // uses max width media query
     .display-#{$name}-down {
         display: none;
 
-        @include breakpoint-max($bp) {
+        @include breakpoint-max($bp - 1px) {
             display: initial;
+        }
+    }
+}
+
+@each $up-name, $up-bp in $display-up {
+    @each $down-name, $down-bp in $display-down {
+        @if $up-bp < $down-bp {
+            .display-#{$up-name}-to-#{$down-name} {
+                display: none;
+
+                @include breakpoint-min-max($up-bp, ($down-bp - 1px)) {
+                    display: initial;
+                }
+            }
         }
     }
 }

@@ -18,7 +18,7 @@ $row-spacing: 10px;
 
     .col {
         flex-grow: 1;
-        flex-basis: 0;
+        flex-basis: 100%;
         max-width: 100%;
         padding: $row-spacing/2 $col-spacing/2;
 
@@ -28,24 +28,36 @@ $row-spacing: 10px;
     }
 
     @for $i from 1 through $col-count {
-        .col-sm-#{$i} {
+        .col-xs-#{$i} {
             flex-basis: ($i / $col-count) * 100%;
             max-width: ($i / $col-count) * 100%;
-
         }
     }
     @for $i from 1 through $col-count {
-        .col-sm-offset-#{$i} {
+        .col-xs-offset-#{$i} {
             margin-left: ($i / $col-count) * 100%;
         }
     }
 
-    @include breakpoint($bp-small) {
+    @include breakpoint-min($bp-small) {
+        @for $i from 1 through $col-count {
+            .col-sm-#{$i} {
+                flex-basis: ($i / $col-count) * 100%;
+                max-width: ($i / $col-count) * 100%;
+            }
+        }
+        @for $i from 1 through $col-count {
+            .col-sm-offset-#{$i} {
+                margin-left: ($i / $col-count) * 100%;
+            }
+        }
+    }
+
+    @include breakpoint-min($bp-medium) {
         @for $i from 1 through $col-count {
             .col-md-#{$i} {
                 flex-basis: ($i / $col-count) * 100%;
                 max-width: ($i / $col-count) * 100%;
-
             }
         }
         @for $i from 1 through $col-count {
@@ -55,13 +67,12 @@ $row-spacing: 10px;
         }
     }
 
-    @include breakpoint($bp-medium) {
+    @include breakpoint-min($bp-large) {
         @for $i from 1 through $col-count {
             .col-lg-#{$i} {
                 flex-basis: ($i / $col-count) * 100%;
                 max-width: ($i / $col-count) * 100%;
             }
-
         }
         @for $i from 1 through $col-count {
             .col-lg-offset-#{$i} {
@@ -70,13 +81,12 @@ $row-spacing: 10px;
         }
     }
 
-    @include breakpoint($bp-large) {
+    @include breakpoint-min($bp-xlarge) {
         @for $i from 1 through $col-count {
             .col-xlg-#{$i} {
                 flex-basis: ($i / $col-count) * 100%;
                 max-width: ($i / $col-count) * 100%;
             }
-
         }
         @for $i from 1 through $col-count {
             .col-xlg-offset-#{$i} {
