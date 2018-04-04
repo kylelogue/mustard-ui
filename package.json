@@ -1,8 +1,21 @@
 {
   "name": "mustard-ui",
   "version": "0.0.1",
-  "description": "A modern approach to CSS components.",
-  "main": "index.js",
+  "description": "A starter CSS framework that actually looks good.",
+  "main": "dist/css/mustard-ui.min.css",
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/kylelogue/mustard-ui.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "sass",
+    "framework",
+    "starter",
+    "responsive",
+    "flexbox"
+  ],
   "scripts": {
     "dev": "gulp",
     "build": "gulp sass"
