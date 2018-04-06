@@ -1,8 +1,16 @@
 // BUTTONS
 // ==============================
 
-$button-shadow: true;
-$button-color: $brand-color;
+$button-radius: 4px;
+$button-shadow: false;
+$button-text-color: $color-white;
+$button-colors: (
+    'primary' : $brand-color,
+    'success' : $color-green-500,
+    'info'    : $color-gray-500,
+    'warning' : $color-amber-600,
+    'danger'  : $color-red-500
+);
 
 .button,
 button,
@@ -17,6 +25,7 @@ input[type='submit'] {
     background: none;
     overflow: visible;
     appearance: none;
+    transition: opacity .1s ease-out;
 
     font-size: 14px;
     font-weight: 600;
@@ -27,12 +36,12 @@ input[type='submit'] {
     text-transform: uppercase;
     white-space: nowrap;
 
-    border-radius: 5px;
+    border-radius: $button-radius;
     border-style: solid;
     border-width: 1px;
 
     @if $button-shadow {
-        box-shadow: 0 2px 4px rgba($color-gray-600, 0.5);
+        box-shadow: 0 2px 4px rgba($color-gray-500, 0.5);
     }
 
     &:focus {
@@ -40,46 +49,50 @@ input[type='submit'] {
     }
 
     &:hover {
-        opacity: 0.9;
-        transform: scale(1.025);
+        opacity: 0.85;
         cursor: pointer;
+        transform: scale(1.025);
 
         @if $button-shadow {
-            box-shadow: 0 2px 8px rgba($color-gray-800, 0.5);
+            box-shadow: 0 2px 8px rgba($color-gray-600, 0.5);
         }
     }
 
     &:active {
         opacity: 1;
-        transform: scale(0.975);
+        transform: scale(1);
     }
 
     &:disabled {
         opacity: 0.5;
 
         &:hover {
-            transform: scale(1);
             cursor: not-allowed;
         }
     }
 
+    @each $name, $color in $button-colors {
+        &.button-#{$name} {
+            background-color: $color;
+            color: $button-text-color;
+            border-color: $color;
+        }
 
-    &.button-primary {
-        background-color: $button-color;
-        color: $color-white;
-        border-color: $button-color;
+        &.button-#{$name}-outlined {
+            background-color: $color-white;
+            color: $color;
+            border-color: $color;
+        }
+
+        &.button-#{$name}-text {
+            color: $color;
+            border-color: transparent;
+        }
+
     }
 
-    &.button-secondary {
-        background-color: $color-white;
-        color: $button-color;
-        border-color: transparent;
-    }
-
-    &.button-tertiary {
-        color: $button-color;
-        border-color: transparent;
-        box-shadow: none;
+    &.button-round {
+        border-radius: 24px;
     }
 
     &.button-large {

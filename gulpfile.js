@@ -16,7 +16,7 @@ gulp.task('sass', function() {
     return gulp.src('src/scss/mustard-ui.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
-        // outputStyle: 'compressed'
+        outputStyle: 'compressed'
     }).on('error', sass.logError))
     .pipe(autoprefixer({
         browsers: [

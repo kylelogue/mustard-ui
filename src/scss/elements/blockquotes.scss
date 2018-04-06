@@ -12,7 +12,6 @@ blockquote {
     font-weight: 400;
     border-left: 4px solid $blockquote-border-color;
     background: $blockquote-bg-color;
-    box-shadow: 0 2px 4px $color-gray-300;
 
     :last-child {
         margin-bottom: 0;

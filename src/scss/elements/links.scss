@@ -7,6 +7,7 @@ a {
     text-decoration: none;
     color: $link-color;
     font-weight: 400;
+    transition: opacity .1s ease-out;
 
     &:hover {
         opacity: 0.75;
