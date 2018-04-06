@@ -16,7 +16,7 @@ npm install mustard-ui
 
 **Include via a CDN::**
 ```html
-<link rel="stylesheet" href="https://cdn.rawgit.com/kylelogue/mustard-ui/61f90ef6/dist/css/mustard-ui.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/kylelogue/mustard-ui/cae1de78/dist/css/mustard-ui.min.css">
 ```
 
 **Clone the Repo:**
