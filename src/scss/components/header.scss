@@ -1,11 +1,11 @@
 // HEADER
 // ==============================
 
-$header-height: 720px;
+$header-height: calc(100vh - 60px);
 $header-title-size: 50px;
 $header-subtitle-size: 18px;
 $header-disclaimer-size: 12px;
-$header-bg-color: $color-amber-400;
+$header-bg-color: $color-amber-500;
 $header-text-color: $color-gray-800;
 
 header,
