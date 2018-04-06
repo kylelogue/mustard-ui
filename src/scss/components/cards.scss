@@ -6,14 +6,14 @@ $card-title-font-size: 28px;
 $card-bg-color: $color-white;
 
 .card {
-    margin-bottom: 30px;
+    margin: 15px;
     padding: 15px;
     background: $card-bg-color;
     overflow: hidden;
     border-radius: 5px;
 
     @if $card-shadow {
-        box-shadow: 0 4px 12px rgba($color-gray-500, 0.5);
+        box-shadow: 0 4px 12px rgba($color-gray-300, 0.5);
     }
 
     .card-title {
