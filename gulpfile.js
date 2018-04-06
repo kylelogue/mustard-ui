@@ -16,10 +16,17 @@ gulp.task('sass', function() {
     return gulp.src('src/scss/mustard-ui.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
-        outputStyle: 'compressed'
+        // outputStyle: 'compressed'
     }).on('error', sass.logError))
     .pipe(autoprefixer({
-        browsers: ['last 2 versions', '> 2%'],
+        browsers: [
+            'Last 2 Chrome versions',
+            'Last 2 Edge versions',
+            'Last 2 Firefox versions',
+            'Last 2 Safari versions',
+            'Last 3 iOS versions',
+            'IE 11'
+        ],
         cascade: false
     }))
     .pipe(rename({
