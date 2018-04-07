@@ -36,5 +36,12 @@ Full documentation is provided on our website located at [mustard-ui.com](https:
 ## Become a Contributor
 Mustard UI is provided free of cost because of the contributions that are made from developers like you. If you'd like to see this project grow, we would love it if you could submit a pull request to the project on GitHub.
 
+To have a quick play, clone the repo locally and change dir into `mustard-ui`. Change the `$brand-color` in `src/scss/base/base.scss` from `$color-green-500` to `$color-indigo-500`. Once you've done that you can rebuild the `dist/css/*` files by running:
+
+```
+$ ./node_modules/.bin/gulp sass
+
+```
+
 ## Copyright and License
 Copyright 2018 Kyle Logue.  This project is licensed under the MIT License.
