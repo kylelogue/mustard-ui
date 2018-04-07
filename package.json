@@ -5,7 +5,7 @@
   "main": "dist/css/mustard-ui.min.css",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kylelogue/mustard-ui.git"
+    "url": "https://github.com/kylelogue/mustard-ui.git"
   },
   "keywords": [
     "css",
