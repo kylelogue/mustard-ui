@@ -5,7 +5,7 @@
   "main": "dist/css/mustard-ui.min.css",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kylelogue/mustard-ui.git"
+    "url": "https://github.com/kylelogue/mustard-ui.git"
   },
   "keywords": [
     "css",
@@ -17,8 +17,8 @@
     "flexbox"
   ],
   "scripts": {
-    "dev": "gulp",
-    "build": "gulp sass"
+    "dev": "./node_modules/.bin/gulp",
+    "build": "./node_modules/.bin/gulp sass"
   },
   "author": "Kyle Logue <hello@kylelogue.com>",
   "license": "MIT",

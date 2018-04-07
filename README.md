@@ -22,10 +22,24 @@ Either use the latest or a specific version:
 <link rel="stylesheet" href="https://unpkg.com/mustard-ui@0.0.5/dist/css/mustard-ui.min.css">
 ```
 
-**Clone the Repo:**
+**Clone the Repo and Install Dependencies:**
 ```bash
 git clone https://github.com/kylelogue/mustard-ui.git
+
 ```
+
+**Re-build the SCSS files:**
+```
+npm run build
+
+```
+
+**Open the Sandbox Environment:**
+```
+npm run dev
+```
+
+You can start configuring the colors to suit your needs by first changing the `$brand-color` variable located in `src/scss/base/base.scss` from `$color-green-500` to `$color-indigo-500` or any other color you'd like.  There are lots of colors that can be found in the `src/scss/vars/colors.scss` file.
 
 ## CSS Only
 Mustard is a CSS framework and does not include any javascript.  We do this in an effort to keep the filesize small.
