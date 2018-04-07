@@ -19,10 +19,24 @@ npm install mustard-ui
 <link rel="stylesheet" href="https://cdn.rawgit.com/kylelogue/mustard-ui/655e202f/dist/css/mustard-ui.min.css">
 ```
 
-**Clone the Repo:**
+**Clone the Repo and Install Dependencies:**
 ```bash
 git clone https://github.com/kylelogue/mustard-ui.git
+
 ```
+
+**Re-build the SCSS files:**
+```
+npm run build
+
+```
+
+**Open the Sandbox Environment:**
+```
+npm run dev
+```
+
+You can start configuring the colors to suit your needs by first changing the `$brand-color` variable located in `src/scss/base/base.scss` from `$color-green-500` to `$color-indigo-500` or any other color you'd like.  There are lots of colors that can be found in the `src/scss/vars/colors.scss` file.
 
 ## CSS Only
 Mustard is a CSS framework and does not include any javascript.  We do this in an effort to keep the filesize small.
@@ -35,13 +49,6 @@ Full documentation is provided on our website located at [mustard-ui.com](https:
 
 ## Become a Contributor
 Mustard UI is provided free of cost because of the contributions that are made from developers like you. If you'd like to see this project grow, we would love it if you could submit a pull request to the project on GitHub.
-
-To have a quick play, clone the repo locally and change dir into `mustard-ui`. Change the `$brand-color` in `src/scss/base/base.scss` from `$color-green-500` to `$color-indigo-500`. Once you've done that you can rebuild the `dist/css/*` files by running:
-
-```
-$ ./node_modules/.bin/gulp sass
-
-```
 
 ## Copyright and License
 Copyright 2018 Kyle Logue.  This project is licensed under the MIT License.
