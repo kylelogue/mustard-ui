@@ -16,7 +16,7 @@ npm install mustard-ui
 
 **Include via a CDN::**
 ```html
-<link rel="stylesheet" href="https://cdn.rawgit.com/kylelogue/mustard-ui/655e202f/dist/css/mustard-ui.min.css">
+<link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
 ```
 
 **Clone the Repo and Install Dependencies:**
@@ -28,7 +28,6 @@ git clone https://github.com/kylelogue/mustard-ui.git
 **Re-build the SCSS files:**
 ```
 npm run build
-
 ```
 
 **Open the Sandbox Environment:**
