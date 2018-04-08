@@ -6,40 +6,40 @@ $sidebar-category-text-color: $color-gray-600;
 
 .sidebar {
     padding: 15px;
+}
 
-    &.sidebar-left {
-        border-right: 1px solid $sidebar-border-color;
+.sidebar-left {
+    border-right: 1px solid $sidebar-border-color;
+}
+
+.sidebar-right {
+    border-left: 1px solid $sidebar-border-color;
+}
+
+.sidebar-category {
+    padding: 10px;
+    font-size: 18px;
+    color: $sidebar-category-text-color;
+    border-bottom: 1px solid $sidebar-border-color;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path d="M9.4 3.6l5.1 6.9L19.5 3.6" fill="' + $color-gray-400 + '"/></svg>') center right no-repeat;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.75;
     }
 
-    &.sidebar-right {
-        border-left: 1px solid $sidebar-border-color;
-    }
+}
 
-    .sidebar-category {
-        padding: 10px;
-        font-size: 18px;
-        color: $sidebar-category-text-color;
-        border-bottom: 1px solid $sidebar-border-color;
-        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path d="M9.4 3.6l5.1 6.9L19.5 3.6" fill="' + $color-gray-400 + '"/></svg>') center right no-repeat;
+.sidebar-links {
+    list-style: none;
+    padding-left: 10px;
 
-        &:hover {
-            cursor: pointer;
-            opacity: 0.75;
-        }
+    a {
+        display: block;
+        padding: 5px 10px;
 
-    }
-
-    .sidebar-links {
-        list-style: none;
-        padding-left: 10px;
-
-        a {
-            display: block;
-            padding: 5px 10px;
-
-            &.active {
-                font-weight: 700;
-            }
+        &.active {
+            font-weight: 700;
         }
     }
 }

@@ -11,11 +11,10 @@ $container-sizes: (
     margin-left: auto;
     margin-right: auto;
     padding: 30px 0;
+}
 
-    @each $name, $size in $container-sizes {
-        &.container-#{$name} {
-            max-width: $size;
-        }
+@each $name, $size in $container-sizes {
+    .container-#{$name} {
+        max-width: $size;
     }
-
 }

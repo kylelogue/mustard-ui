@@ -32,26 +32,26 @@ $modal-content-bg-color: $color-gray-200;
     @if $modal-shadow {
         box-shadow: 0 4px 12px rgba($color-gray-600, 0.5);
     }
+}
 
-    .modal-head {
-        padding: 10px 15px;
+.modal-head {
+    padding: 10px 15px;
 
-        .modal-title {
-            font-size: 24px;
-        }
+    .modal-title {
+        font-size: 24px;
     }
+}
 
-    .modal-body {
-        flex: 1;
-        padding: 30px 15px;
-        background: $modal-content-bg-color;
-    }
+.modal-body {
+    flex: 1;
+    padding: 30px 15px;
+    background: $modal-content-bg-color;
+}
 
-    .modal-footer {
-        padding: 15px;
+.modal-footer {
+    padding: 15px;
 
-        & > * {
-            margin-bottom: 0;
-        }
+    & > * {
+        margin-bottom: 0;
     }
 }

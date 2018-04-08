@@ -16,30 +16,30 @@ $tooltip-underline-color: $color-gray-400;
             display: block;
         }
     }
+}
 
-    .tooltip-text {
-        display: none;
+.tooltip-text {
+    display: none;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 300px;
+    padding: 10px 15px;
+    color: $color-white;
+    text-align: center;
+    background: $tooltip-bg-color;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px $color-gray-500;
+
+    &::after {
         position: absolute;
-        bottom: 125%;
+        content: '';
+        top: 100%;
         left: 50%;
         transform: translateX(-50%);
-        min-width: 300px;
-        padding: 10px 15px;
-        color: $color-white;
-        text-align: center;
-        background: $tooltip-bg-color;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px $color-gray-500;
-
-        &::after {
-            position: absolute;
-            content: '';
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            border-width: 8px;
-            border-style: solid;
-            border-color: $tooltip-bg-color transparent transparent;
-        }
+        border-width: 8px;
+        border-style: solid;
+        border-color: $tooltip-bg-color transparent transparent;
     }
 }

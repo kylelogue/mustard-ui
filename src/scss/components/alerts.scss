@@ -12,11 +12,10 @@ $alert-colors: (
     margin: 15px 0;
     padding: 15px;
     border-radius: 5px;
+}
 
-    @each $name, $color in $alert-colors {
-        &.alert-#{$name} {
-            background: $color;
-        }
+@each $name, $color in $alert-colors {
+    .alert-#{$name} {
+        background: $color;
     }
-
 }

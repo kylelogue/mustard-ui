@@ -28,6 +28,7 @@ header,
 
         @include breakpoint-min($bp-medium) {
             font-size: $header-title-size * 1.2;
+            line-height: $header-title-size * 1.2;
         }
     }
 
@@ -39,8 +40,8 @@ header,
         text-align: center;
 
         @include breakpoint-min($bp-medium) {
-            font-size: $header-subtitle-size * 1.33;
-            line-height: 36px;
+            font-size: $header-subtitle-size * 1.4;
+            line-height: $header-subtitle-size * 1.4;
         }
     }
 

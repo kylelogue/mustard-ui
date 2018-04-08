@@ -12,16 +12,16 @@ section {
     :last-child {
         margin-bottom: 0;
     }
+}
 
-    &.section-primary {
-        background: $section-primary-bg-color;
-    }
+.section-primary {
+    background: $section-primary-bg-color;
+}
 
-    &.section-secondary {
-        background: $section-secondary-bg-color;
-    }
+.section-secondary {
+    background: $section-secondary-bg-color;
+}
 
-    &.section-tertiary {
-        background: $section-tertiary-bg-color;
-    }
+.section-tertiary {
+    background: $section-tertiary-bg-color;
 }

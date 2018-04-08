@@ -16,20 +16,21 @@ $card-bg-color: $color-white;
         box-shadow: 0 4px 12px rgba($color-gray-300, 0.5);
     }
 
-    .card-title {
-        font-size: $card-title-font-size;
-        margin-bottom: 5px;
-    }
+}
 
-    .card-actions {
-        display: flex;
-        align-items: center;
-        margin-top: 30px;
-        list-style: none;
-        justify-content: space-around;
+.card-title {
+    font-size: $card-title-font-size;
+    margin-bottom: 5px;
+}
 
-        & > * {
-            margin-bottom: 0;
-        }
+.card-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    list-style: none;
+    justify-content: space-around;
+
+    & > * {
+        margin-bottom: 0;
     }
 }

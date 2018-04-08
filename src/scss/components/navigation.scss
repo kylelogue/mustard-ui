@@ -13,82 +13,83 @@ nav,
     width: 100%;
     background: $nav-bg-color;
 
-    .nav-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 30px;
-    }
-
     a {
         display: block;
         color: $nav-link-color;
     }
+        
+}
 
-    .nav-logo {
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.nav-links {
+    display: none;
+    list-style: none;
+    margin: 0;
+    height: 100%;
+
+    @include breakpoint-min($bp-medium) {
+        display: flex;
+    }
+
+    li,
+    a {
+        height: 100%;
+    }
+
+    a {
         display: flex;
         align-items: center;
-        font-size: 32px;
-        line-height: 32px;
-    }
+        padding: 0 30px;
 
-    .nav-links {
+        &:active {
+            color: $nav-link-active-color;
+        }
+
+        &.active {
+            border-bottom: 4px solid $nav-link-active-color;
+        }
+    }
+}
+
+.mobile-menu-toggle {
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 26px;
+
+    @include breakpoint-min($bp-medium) {
         display: none;
-        list-style: none;
-        margin: 0;
-        height: 100%;
-
-        @include breakpoint-min($bp-medium) {
-            display: flex;
-        }
-
-        li,
-        a {
-            height: 100%;
-        }
-
-        a {
-            display: flex;
-            align-items: center;
-            padding: 0 30px;
-
-            &:active {
-                color: $nav-link-active-color;
-            }
-
-            &.active {
-                border-bottom: 4px solid $nav-link-active-color;
-            }
-        }
     }
 
-    .mobile-menu-toggle {
-        display: block;
-        position: relative;
-        height: 20px;
+    &:hover {
+        cursor: pointer;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 26px;
-
-        @include breakpoint-min($bp-medium) {
-            display: none;
-        }
-
-        &:hover {
-            cursor: pointer;
-        }
-
-        &::before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 26px;
-            height: 4px;
-            content: '';
-            background: $nav-menu-toggle-color;
-            border-radius: 4px;
-            box-shadow: 0 8px 0 0 $nav-menu-toggle-color, 0 16px 0 0 $nav-menu-toggle-color;
-        }
+        height: 4px;
+        content: '';
+        background: $nav-menu-toggle-color;
+        border-radius: 4px;
+        box-shadow: 0 8px 0 0 $nav-menu-toggle-color, 0 16px 0 0 $nav-menu-toggle-color;
     }
 }

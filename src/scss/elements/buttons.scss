@@ -70,43 +70,42 @@ input[type='submit'] {
             cursor: not-allowed;
         }
     }
+}
 
-    @each $name, $color in $button-colors {
-        &.button-#{$name} {
-            background-color: $color;
-            color: $button-text-color;
-            border-color: $color;
-        }
-
-        &.button-#{$name}-outlined {
-            background-color: $color-white;
-            color: $color;
-            border-color: $color;
-        }
-
-        &.button-#{$name}-text {
-            color: $color;
-            border-color: transparent;
-        }
-
+@each $name, $color in $button-colors {
+    .button-#{$name} {
+        background-color: $color;
+        color: $button-text-color;
+        border-color: $color;
     }
 
-    &.button-round {
-        border-radius: 24px;
+    .button-#{$name}-outlined {
+        background-color: $color-white;
+        color: $color;
+        border-color: $color;
     }
 
-    &.button-large {
-        height: 48px;
-        line-height: 48px;
-        padding: 0 30px;
-        font-size: 16px;
+    .button-#{$name}-text {
+        color: $color;
+        border-color: transparent;
     }
 
-    &.button-small {
-        height: 30px;
-        line-height: 30px;
-        padding: 0 15px;
-        font-size: 12px;
-    }
+}
 
+.button-round {
+    border-radius: 24px;
+}
+
+.button-large {
+    height: 48px;
+    line-height: 48px;
+    padding: 0 30px;
+    font-size: 16px;
+}
+
+.button-small {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    font-size: 12px;
 }
