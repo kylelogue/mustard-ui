@@ -49,9 +49,9 @@ input[type='submit'] {
     }
 
     &:hover {
-        opacity: 0.85;
+        opacity: 0.9;
         cursor: pointer;
-        transform: scale(1.025);
+        box-shadow: inset 0 -1px 1px $color-gray-400;
 
         @if $button-shadow {
             box-shadow: 0 2px 8px rgba($color-gray-600, 0.5);
@@ -60,7 +60,8 @@ input[type='submit'] {
 
     &:active {
         opacity: 1;
-        transform: scale(1);
+        transform: scale(0.975);
+        box-shadow: none;
     }
 
     &:disabled {
