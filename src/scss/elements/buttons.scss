@@ -48,6 +48,7 @@ input[type='submit'] {
         outline: none;
     }
 
+    &:focus,
     &:hover {
         opacity: 0.85;
         cursor: pointer;

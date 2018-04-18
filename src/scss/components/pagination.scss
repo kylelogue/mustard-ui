@@ -21,6 +21,7 @@ $pagination-border-color: $color-gray-300;
             border: 1px solid $pagination-border-color;
 
             &.active,
+            &:focus,
             &:hover {
                 opacity: 1;
                 border-color: $pagination-active-color;

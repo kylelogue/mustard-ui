@@ -21,6 +21,7 @@ $menu-hover-color: $color-gray-50;
             padding: 10px 30px;
             border-bottom: 1px solid $color-gray-200;
 
+            &:focus,
             &:hover {
                 background: $menu-hover-color;
             }

@@ -77,6 +77,7 @@ nav,
         display: none;
     }
 
+    &:focus,
     &:hover {
         cursor: pointer;
     }

@@ -9,6 +9,7 @@ a {
     font-weight: 400;
     transition: opacity .1s ease-out;
 
+    &:focus,
     &:hover {
         opacity: 0.75;
     }

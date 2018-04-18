@@ -25,6 +25,7 @@ $tab-inactive-text-color: $color-gray-400;
             color: $tab-active-text-color;
         }
 
+        &:focus,
         &:hover {
             opacity: 1;
             color: $tab-hover-text-color;
