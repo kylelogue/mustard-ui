@@ -23,6 +23,7 @@ $sidebar-category-text-color: $color-gray-600;
     border-bottom: 1px solid $sidebar-border-color;
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path d="M9.4 3.6l5.1 6.9L19.5 3.6" fill="' + $color-gray-400 + '"/></svg>') center right no-repeat;
 
+    &:focus,
     &:hover {
         cursor: pointer;
         opacity: 0.75;

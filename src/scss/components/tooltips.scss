@@ -9,6 +9,7 @@ $tooltip-underline-color: $color-gray-400;
     position: relative;
     border-bottom: 1px dashed $tooltip-underline-color;
 
+    &:focus,
     &:hover {
         cursor: pointer;
 
