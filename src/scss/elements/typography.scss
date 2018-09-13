@@ -1,13 +1,13 @@
 // TYPOGRAPHY
 // ==============================
 
-$line-height: 1.6;
-$font-weight: 300;
-$font-size-base: 16px;
-$font-color: $color-gray-800;
-$heading-font-color: $color-gray-800;
-$font-family: 'Open Sans', sans-serif;
-$heading-font-family: 'Open Sans', sans-serif;
+$line-height: 1.6 !default;
+$font-weight: 300 !default;
+$font-size-base: 16px !default;
+$font-color: $color-gray-800 !default;
+$heading-font-color: $color-gray-800 !default;
+$font-family: 'Open Sans', sans-serif !default;
+$heading-font-family: 'Open Sans', sans-serif !default;
 
 body {
   font-family: $font-family;

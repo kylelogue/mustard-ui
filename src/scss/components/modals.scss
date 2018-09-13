@@ -1,10 +1,10 @@
 // MODALS
 // ==============================
 
-$modal-shadow: true;
-$modal-bg-color: $color-white;
-$modal-mask-color: $color-gray-700;
-$modal-content-bg-color: $color-gray-200;
+$modal-shadow: true !default;
+$modal-bg-color: $color-white !default;
+$modal-mask-color: $color-gray-700 !default;
+$modal-content-bg-color: $color-gray-200 !default;
 
 .modal-mask {
     position: fixed;

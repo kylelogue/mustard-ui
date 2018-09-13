@@ -1,9 +1,9 @@
 // CARDS
 // ==============================
 
-$card-shadow: true;
-$card-title-font-size: 24px;
-$card-bg-color: $color-white;
+$card-shadow: true !default;
+$card-title-font-size: 24px !default;
+$card-bg-color: $color-white !default;
 
 .card {
     margin: 15px;

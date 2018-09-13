@@ -1,9 +1,9 @@
 // MENUS
 // ==============================
 
-$menu-shadow: true;
-$menu-bg-color: $color-white;
-$menu-hover-color: $color-gray-50;
+$menu-shadow: true !default;
+$menu-bg-color: $color-white !default;
+$menu-hover-color: $color-gray-50 !default;
 
 .menu {
     display: inline-block;

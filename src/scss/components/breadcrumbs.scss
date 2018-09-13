@@ -1,8 +1,8 @@
 // BREADCRUMBS
 // ==============================
 
-$breadcrumb-spacing: 5px;
-$breadcrumb-separator: '/';
+$breadcrumb-spacing: 5px !default;
+$breadcrumb-separator: '/' !default;
 
 .breadcrumbs {
     display: flex;

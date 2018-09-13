@@ -1,8 +1,8 @@
 // STEPPERS
 // ==============================
 
-$step-text-color: $color-white;
-$step-bg-color: $color-light-green-500;
+$step-text-color: $color-white !default;
+$step-bg-color: $color-light-green-500 !default;
 
 .stepper {
     margin: 30px 15px;

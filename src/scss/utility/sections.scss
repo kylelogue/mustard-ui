@@ -1,9 +1,9 @@
 // SECTIONS
 // ==============================
 
-$section-primary-bg-color: $color-amber-400;
-$section-secondary-bg-color: $color-gray-100;
-$section-tertiary-bg-color: $color-white;
+$section-primary-bg-color: $color-amber-400 !default;
+$section-secondary-bg-color: $color-gray-100 !default;
+$section-tertiary-bg-color: $color-white !default;
 
 .section,
 section {

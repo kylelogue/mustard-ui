@@ -1,10 +1,10 @@
 // PANELS
 // =============================
 
-$panel-shadow: true;
-$panel-bg-color: $color-white;
-$panel-head-color: $color-gray-50;
-$panel-footer-color: $color-gray-50;
+$panel-shadow: true !default;
+$panel-bg-color: $color-white !default;
+$panel-head-color: $color-gray-50 !default;
+$panel-footer-color: $color-gray-50 !default;
 
 .panel {
     background: $panel-bg-color;

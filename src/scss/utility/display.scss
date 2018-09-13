@@ -6,13 +6,13 @@ $display-up: (
 'md'   : $bp-medium,
 'lg'   : $bp-large,
 'xlg'  : $bp-xlarge
-);
+) !default;
 $display-down: (
 'sm'   : $bp-small,
 'md'   : $bp-medium,
 'lg'   : $bp-large,
 'xlg'  : $bp-xlarge,
-);
+) !default;
 
 .display-flex {
     display: flex;

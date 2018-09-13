@@ -1,8 +1,8 @@
 // CODE
 // ==============================
 
-$code-bg-color: $color-gray-100;
-$code-border-color: $brand-color;
+$code-bg-color: $color-gray-100 !default;
+$code-border-color: $brand-color !default;
 
 pre {
     display: block;

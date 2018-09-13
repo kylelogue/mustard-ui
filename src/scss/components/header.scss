@@ -1,12 +1,12 @@
 // HEADER
 // ==============================
 
-$header-height: 100vh;
-$header-title-size: 50px;
-$header-subtitle-size: 18px;
-$header-disclaimer-size: 12px;
-$header-bg-color: $color-amber-500;
-$header-text-color: $color-gray-800;
+$header-height: 100vh !default;
+$header-title-size: 50px !default;
+$header-subtitle-size: 18px !default;
+$header-disclaimer-size: 12px !default;
+$header-bg-color: $color-amber-500 !default;
+$header-text-color: $color-gray-800 !default;
 
 header,
 .header {
