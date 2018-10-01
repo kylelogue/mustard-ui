@@ -1,10 +1,6 @@
 // CONTAINERS
 // ==============================
 
-$container-sizes: (
-    'small'    : 768px,
-    'large'    : 1440px,
-) !default;
 
 .container {
     max-width: 1200px;

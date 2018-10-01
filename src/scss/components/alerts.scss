@@ -1,12 +1,6 @@
 // ALERTS
 // ==============================
 
-$alert-colors: (
-    'danger'   : $color-red-50,
-    'info'     : $color-blue-50,
-    'warning'  : $color-amber-50,
-    'success'  : $color-green-50,
-) !default;
 
 .alert {
     margin: 15px 0;

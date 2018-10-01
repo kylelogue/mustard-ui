@@ -1,14 +1,6 @@
 // TAGS
 // ==============================
 
-$tag-text-color: $color-white !default;
-$tag-default-color: $color-gray-500 !default;
-$tag-colors: (
-    'blue'    : $color-blue-500,
-    'red'     : $color-red-500,
-    'green'   : $color-green-500,
-    'orange'  : $color-orange-500,
-) !default;
 
 .tags {
     display: flex;
