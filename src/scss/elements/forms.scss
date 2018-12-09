@@ -140,3 +140,30 @@ textarea {
         border-color: $input-invalid-color;
     }
 }
+
+input[type="date"] {
+    appearance: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: inherit;
+    background: $input-bg-color;
+    border-radius: 5px;
+    border: 1px solid $input-border-color;
+
+    &::placeholder {
+        color: $input-placeholder-color;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $input-active-color;
+    }
+
+    &.invalid {
+        border-color: $input-error-text-color;
+    }
+
+}
