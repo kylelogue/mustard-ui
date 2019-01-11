@@ -1,0 +1,257 @@
+
+
+// BASE
+// ==============================
+
+$body-bg-color: $color-white;
+$brand-color: $color-green-500;
+
+
+// ==============================
+// COMPONENTS
+// ==============================
+
+
+// ALERTS
+// ==============================
+
+$alert-colors: (
+    'danger'   : $color-red-50,
+    'info'     : $color-blue-50,
+    'warning'  : $color-amber-50,
+    'success'  : $color-green-50,
+);
+
+// BREADCRUMBS
+// ==============================
+
+$breadcrumb-spacing: 5px;
+$breadcrumb-separator: '/';
+
+// CARDS
+// ==============================
+
+$card-shadow: true;
+$card-title-font-size: 24px;
+$card-bg-color: $color-white;
+
+// FOOTER
+// ==============================
+
+$footer-text-color: $color-white;
+$footer-bg-color: $color-gray-600;
+$footer-links-color: $color-gray-400;
+
+// HEADER
+// ==============================
+
+$header-height: 100vh;
+$header-title-size: 50px;
+$header-subtitle-size: 18px;
+$header-disclaimer-size: 12px;
+$header-bg-color: $color-amber-500;
+$header-text-color: $color-gray-800;
+
+// MENUS
+// ==============================
+
+$menu-shadow: true;
+$menu-bg-color: $color-white;
+$menu-hover-color: $color-gray-50;
+
+// MODALS
+// ==============================
+
+$modal-shadow: true;
+$modal-bg-color: $color-white;
+$modal-mask-color: $color-gray-700;
+$modal-content-bg-color: $color-gray-200;
+
+// NAVIGATION
+// ==============================
+
+$nav-bg-color: $color-amber-500;
+$nav-link-color: $color-gray-800;
+$nav-link-active-color: $brand-color;
+$nav-menu-toggle-color: $color-gray-800;
+
+// PAGINATION
+// ==============================
+
+$pagination-bg-color: $color-white;
+$pagination-active-color: $brand-color;
+$pagination-border-color: $color-gray-300;
+
+// PANELS
+// =============================
+
+$panel-shadow: true;
+$panel-bg-color: $color-white;
+$panel-head-color: $color-gray-50;
+$panel-footer-color: $color-gray-50;
+
+// PRICING TABLES
+// ===============================
+
+$package-bg-color: $color-white;
+$package-featured-color: $brand-color;
+$package-border-color: $color-gray-300;
+$package-separator-color: $color-gray-300;
+
+// PROGRESS BARS
+// ==============================
+
+$progress-bar-height: 20px;
+$progress-bar-bg-color: $color-gray-200;
+$progress-bar-colors: (
+    'green'  : $color-green-400,
+    'blue'   : $color-blue-400,
+    'red'    : $color-red-400,
+);
+
+// SIDEBAR
+// ==============================
+
+$sidebar-border-color: $color-gray-300;
+$sidebar-category-text-color: $color-gray-600;
+
+// STEPPERS
+// ==============================
+
+$step-text-color: $color-white;
+$step-bg-color: $color-light-green-500;
+
+// TABS
+// ==============================
+
+$tab-active-color: $brand-color;
+$tab-border-color: $color-gray-300;
+$tab-hover-text-color: $color-gray-800;
+$tab-active-text-color: $color-gray-600;
+$tab-inactive-text-color: $color-gray-400;
+
+// TAGS
+// ==============================
+
+$tag-text-color: $color-white;
+$tag-default-color: $color-gray-500;
+$tag-colors: (
+    'blue'    : $color-blue-500,
+    'red'     : $color-red-500,
+    'green'   : $color-green-500,
+    'orange'  : $color-orange-500,
+);
+
+// TOOLTIPS
+// ==============================
+
+$tooltip-bg-color: $color-gray-800;
+$tooltip-underline-color: $color-gray-400;
+
+
+// ==============================
+// ELEMENTS
+// ==============================
+
+// BLOCKQUOTES
+// ==============================
+
+$blockquote-bg-color: $color-white;
+$blockquote-border-color: $brand-color;
+
+// BUTTONS
+// ==============================
+
+$button-radius: 4px;
+$button-shadow: false;
+$button-text-color: $color-white;
+$button-colors: (
+    'primary' : $brand-color,
+    'success' : $color-green-500,
+    'info'    : $color-gray-500,
+    'warning' : $color-amber-600,
+    'danger'  : $color-red-500
+);
+
+// CODE
+// ==============================
+
+$code-bg-color: $color-gray-100;
+$code-border-color: $brand-color;
+
+// FORMS
+// ==============================
+
+$input-bg-color: $color-white;
+$input-active-color: $brand-color;
+$input-border-color: $color-gray-400;
+$input-invalid-color: $color-red-200;
+$input-error-text-color: $color-red-500;
+$input-placeholder-color: $color-gray-500;
+
+// LINKS
+// ==============================
+
+$link-color: $brand-color;
+
+// TABLES
+// ==============================
+
+$table-border-color: $color-gray-200;
+$table-header-text-color: $color-gray-500;
+
+// TYPOGRAPHY
+// ==============================
+
+$line-height: 1.6;
+$font-weight: 300;
+$font-size-base: 16px;
+$font-color: $color-gray-800;
+$heading-font-color: $color-gray-800;
+$font-family: 'Open Sans', sans-serif;
+$heading-font-family: 'Open Sans', sans-serif;
+
+
+
+// ==============================
+// UTILITY
+// ==============================
+
+
+// CONTAINERS
+// ==============================
+
+$container-sizes: (
+    'small'    : 768px,
+    'large'    : 1440px,
+);
+
+// DISPLAY
+// ==============================
+
+$display-up: (
+'sm'   : $bp-small,
+'md'   : $bp-medium,
+'lg'   : $bp-large,
+'xlg'  : $bp-xlarge
+);
+$display-down: (
+'sm'   : $bp-small,
+'md'   : $bp-medium,
+'lg'   : $bp-large,
+'xlg'  : $bp-xlarge,
+);
+
+// GRID
+// ==============================
+
+$col-count: 12 !default;
+$col-spacing: 10px !default;
+$row-spacing: 10px !default;
+
+// SECTIONS
+// ==============================
+
+$section-primary-bg-color: $color-amber-400 !default;
+$section-secondary-bg-color: $color-gray-100 !default;
+$section-tertiary-bg-color: $color-white !default;

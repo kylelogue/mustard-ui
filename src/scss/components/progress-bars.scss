@@ -1,13 +1,6 @@
 // PROGRESS BARS
 // ==============================
 
-$progress-bar-height: 20px !default;
-$progress-bar-bg-color: $color-gray-200 !default;
-$progress-bar-colors: (
-    'green'  : $color-green-400,
-    'blue'   : $color-blue-400,
-    'red'    : $color-red-400,
-);
 
 .progress-bar {
     position: relative;
