@@ -44,7 +44,7 @@ You can use the framework as is or customize it via the component variables loca
 
 
 ## Documentation
-Full documentation is provided on our website located on this repositories [GitHub Page](hhttps://kylelogue.github.io/mustard-ui) and also located in the `/docs` folder as static html.
+Full documentation is provided on our website located on this repositories [GitHub Page](https://kylelogue.github.io/mustard-ui) and also located in the `/docs` folder as static html.
 
 ## Become a Contributor
 Mustard UI is provided free of cost because of the contributions that are made from developers like you. If you'd like to see this project grow, we would love it if you could submit a pull request to the project on GitHub.
