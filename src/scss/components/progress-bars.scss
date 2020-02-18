@@ -7,7 +7,7 @@ $progress-bar-colors: (
     'green'  : $color-green-400,
     'blue'   : $color-blue-400,
     'red'    : $color-red-400,
-);
+) !default;
 
 .progress-bar {
     position: relative;
