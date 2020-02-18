@@ -1,4 +1,4 @@
-# [Mustard UI](https://mustard-ui.com)
+# [Mustard UI](https://kylelogue.github.io/mustard-ui)
 Mustard is a **starter CSS framework** that actually looks good.
 
 [![npm](https://img.shields.io/npm/v/mustard-ui.svg)](https://www.npmjs.com/package/mustard-ui)
