@@ -22,9 +22,11 @@
   },
   "author": "Kyle Logue <hello@kylelogue.com>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "natives": "^1.1.6"
+  },
   "devDependencies": {
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.26.7",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-rename": "^1.2.3",
