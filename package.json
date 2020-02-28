@@ -1,6 +1,6 @@
 {
   "name": "mustard-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A starter CSS framework that actually looks good.",
   "main": "dist/css/mustard-ui.min.css",
   "repository": {
