@@ -4,13 +4,10 @@ Mustard is a **starter CSS framework** that actually looks good.
 [![npm](https://img.shields.io/npm/v/mustard-ui.svg)](https://www.npmjs.com/package/mustard-ui)
 [![npm](https://img.shields.io/npm/l/mustard-ui.svg)](https://www.npmjs.com/package/mustard-ui)
 
-## NOTICE
-I'm actively looking for someone to take over this project.
-
 ## Getting Started
-Mustard UI is currently in **BETA**.  Try it out today and help us fine tune the look and feel!
+Mustard UI is currently in release v1.0.  Try it out today and help us fine tune the look and feel for future versions!
 
-To get started, you can follow our [Installation Guide](https://mustard-ui.com/docs/installation/) or use one of the methods provided below:
+To get started, you can follow our [Installation Guide](https://kylelogue.github.io/mustard-ui/docs/installation) or use one of the methods provided below:
 
 **Install Using NPM:**
 ```bash
