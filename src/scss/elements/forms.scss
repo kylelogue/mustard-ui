@@ -85,7 +85,7 @@ select {
         border-color: $input-active-color;
     }
 
-    &.invalid {
+    &.invalid, &:invalid {
         border-color: $input-error-text-color;
     }
 
