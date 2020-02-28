@@ -50,6 +50,18 @@ label {
     font-weight: 400;
 }
 
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
 input[type="text"],
 input[type="password"],
 select {
@@ -97,7 +109,11 @@ input[type="radio"] {
 }
 
 select {
-    background: $input-bg-color url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="' + $input-border-color + '" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+    background-color: $input-bg-color;
+    background-image: linear-gradient(45deg, transparent 50%, $input-border-color 50%), linear-gradient(135deg, $input-border-color 50%, transparent 50%), linear-gradient(to right, $input-border-color, $input-border-color);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
     padding-right: 30px;
 
     &:hover {
@@ -109,7 +125,7 @@ select {
     }
 
     &:focus {
-        background: $input-bg-color url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="' + $input-active-color + '" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+        background-image: linear-gradient(45deg, transparent 50%, $input-active-color 50%), linear-gradient(135deg, $input-active-color 50%, transparent 50%), linear-gradient(to right, $input-active-color, $input-active-color);
     }
 }
 
@@ -139,4 +155,14 @@ textarea {
     &.invalid {
         border-color: $input-invalid-color;
     }
+}
+
+input[type="color"] {
+    display: initial;
+    padding: 0 !important;
+    height: 42px;
+}
+
+input[type="range"] {
+    appearance: range
 }
