@@ -75,7 +75,9 @@ select {
     background: $input-bg-color;
     border-radius: 5px;
     border: 1px solid $input-border-color;
+}
 
+input, select, fieldset {
     &::placeholder {
         color: $input-placeholder-color;
     }
@@ -88,7 +90,6 @@ select {
     &.invalid, &:invalid {
         border-color: $input-error-text-color;
     }
-
 }
 
 fieldset {
@@ -106,6 +107,16 @@ fieldset {
 input[type="checkbox"],
 input[type="radio"] {
     margin-right: 10px;
+}
+
+input[type="range"] {
+    appearance: range
+}
+
+input[type="color"] {
+    display: initial;
+    padding: 0 !important;
+    height: 42px;
 }
 
 select {
@@ -148,21 +159,11 @@ textarea {
     }
 
     &:focus {
-        border-color: $input-active-color;
         outline: none;
+        border-color: $input-active-color;
     }
 
-    &.invalid {
+    &.invalid, &:invalid {
         border-color: $input-invalid-color;
     }
-}
-
-input[type="color"] {
-    display: initial;
-    padding: 0 !important;
-    height: 42px;
-}
-
-input[type="range"] {
-    appearance: range
 }
