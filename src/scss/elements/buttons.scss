@@ -64,12 +64,10 @@ input[type='submit'] {
         transform: scale(1);
     }
 
-    &:disabled {
+    &:disabled
+    &.disabled {
         opacity: 0.5;
-
-        &:hover {
-            cursor: not-allowed;
-        }
+        cursor: not-allowed;
     }
 }
 
