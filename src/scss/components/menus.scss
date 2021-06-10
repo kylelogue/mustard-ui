@@ -26,5 +26,13 @@ $menu-hover-color: $color-gray-50 !default;
                 background: $menu-hover-color;
             }
         }
+        
+        &:first-child a {
+            border-radius: 5px 5px 0 0;
+        }
+
+        &:last-child a {
+            border-radius: 0 0 5px 5px;
+        }
     }
 }
